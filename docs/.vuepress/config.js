@@ -7,7 +7,6 @@ module.exports = {
     ['link', { rel: 'icon', href: 'https://nest.land/favicon.png' }]
 
   ],
-  theme: '/docs/.vuepress/theme',
   themeConfig: {
 
     nav: [
