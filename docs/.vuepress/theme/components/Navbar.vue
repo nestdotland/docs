@@ -1,5 +1,8 @@
 <template>
   <header class="navbar">
+
+    <div class="sidebar-bg-mask"></div>
+
     <SidebarButton @toggle-sidebar="$emit('toggle-sidebar')" />
 
     <RouterLink
@@ -12,12 +15,12 @@
         :src="$withBase($site.themeConfig.logo)"
         :alt="$siteTitle"
       >
-      <span
+      <!--<span
         v-if="$siteTitle"
         ref="siteName"
         class="site-name"
         :class="{ 'can-hide': $site.themeConfig.logo }"
-      >{{ $siteTitle }}</span>
+      >{{ $siteTitle }}</span>-->
     </RouterLink>
 
     <div
@@ -102,8 +105,8 @@ $navbar-horizontal-padding = 1.5rem
   a, span, img
     display inline-block
   .logo
-    height $navbarHeight - 1.4rem
-    min-width $navbarHeight - 1.4rem
+    height 1.75rem
+    min-width 1.75rem
     margin-right 0.8rem
     vertical-align top
   .site-name

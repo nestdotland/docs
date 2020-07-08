@@ -1,4 +1,5 @@
 <template>
+
   <div
     class="theme-container"
     :class="pageClasses"
@@ -26,12 +27,19 @@
       :items="sidebarItems"
       @toggle-sidebar="toggleSidebar"
     >
+
       <template #top>
+
         <slot name="sidebar-top" />
+
       </template>
+
       <template #bottom>
+
         <slot name="sidebar-bottom" />
+
       </template>
+
     </Sidebar>
 
     <Home v-if="$page.frontmatter.home" />
@@ -40,14 +48,23 @@
       v-else
       :sidebar-items="sidebarItems"
     >
+
       <template #top>
+
         <slot name="page-top" />
+
       </template>
+
       <template #bottom>
+
         <slot name="page-bottom" />
+
       </template>
+
     </Page>
+
   </div>
+
 </template>
 
 <script>
@@ -219,12 +236,15 @@
 <style lang="stylus">
 
   ::selection
-    background #20b39c
+    background $accentColor
     color #fff
 
   ::-moz-selection
-    background #20b39c
+    background $accentColor
     color #fff
+
+  body, input, button, textarea
+    font-family BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,Arial,sans-serif
 
   .LoadingLine
     position fixed
@@ -234,7 +254,7 @@
     height 3px
     z-index 10000000
     opacity 1
-    background linear-gradient(271deg, #22c1c3, #fdbb2d)
+    background linear-gradient(271deg, $accentColor, #fdbb2d)
     background-size 400% 400%
     -webkit-animation nestGradient 6s ease infinite
     -moz-animation nestGradient 6s ease infinite

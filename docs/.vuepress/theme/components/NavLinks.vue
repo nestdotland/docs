@@ -128,6 +128,8 @@ export default {
   a
     line-height 1.4rem
     color inherit
+    border-bottom 2px solid transparent
+    transition border-color .14s
     &:hover, &.router-link-active
       color $accentColor
   .nav-item

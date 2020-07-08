@@ -1,5 +1,3 @@
-const path = require('path')
-
 module.exports = {
 
   title: 'Nest.land Docs',
@@ -11,12 +9,19 @@ module.exports = {
   ],
   themeConfig: {
 
+    nav: [
+
+      { text: 'Back to the main site', link: 'https://nest.land' }
+
+    ],
     sidebar: [
 
       '/',
       '/installation'
 
-    ]
+    ],
+    logo: '/nest_light.png',
+    searchPlaceholder: 'Search in docs...'
 
   }
 
