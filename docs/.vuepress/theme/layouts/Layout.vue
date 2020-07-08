@@ -57,7 +57,12 @@
 
       <template #bottom>
 
-        <slot name="page-bottom" />
+        <div>
+
+          <slot name="page-bottom" />
+          <Footer />
+
+        </div>
 
       </template>
 
@@ -73,6 +78,7 @@
   import Navbar from '@theme/components/Navbar.vue'
   import Page from '@theme/components/Page.vue'
   import Sidebar from '@theme/components/Sidebar.vue'
+  import Footer from '@theme/components/Footer.vue'
   import { resolveSidebarItems } from '../util'
 
   export default {
@@ -83,7 +89,8 @@
       Home,
       Page,
       Sidebar,
-      Navbar
+      Navbar,
+      Footer
 
     },
     data () {

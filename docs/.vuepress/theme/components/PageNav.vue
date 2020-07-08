@@ -150,8 +150,7 @@ function flatten (items, res) {
 
 .page-nav
   @extend $wrapper
-  padding-top 1rem
-  padding-bottom 0
+  padding 1rem 1rem 0
   .inner
     min-height 2rem
     margin-top 0
