@@ -1,17 +1,15 @@
 {
-  "name": "nest.land-template",
+  "name": "nest.land-docs",
   "version": "0.0.1",
-  "description": "A template for nest.land projects.",
+  "description": "The nest.land docs",
   "scripts": {
-    "lint": "eslint ./src"
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
   },
   "author": "nest.land team",
   "license": "MIT",
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^2.28.0",
-    "@typescript-eslint/parser": "^2.28.0",
-    "eslint": "^7.3.1",
-    "eslint-config-bamboo": "^3.0.0",
-    "eslint-config-prettier": "^6.11.0"
-  }
+    "vuepress": "^1.5.2"
+  },
+  "dependencies": {}
 }
