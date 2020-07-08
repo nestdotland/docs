@@ -11,9 +11,9 @@
  </p>
 </p>
 
-## nest.land template
+## nest.land docs
 
-A template for nest.land repositories. Remove this sentence and change this header to describe the project this template is being used for.
+This is a [vuepress](https://vuepress.vuejs.org/) based documentation with a custom theme by [@martondev](https://github.com/MartonDev), based on @vuepress/theme-default.
 
 ## What is nest.land?
 

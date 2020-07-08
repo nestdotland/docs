@@ -7,6 +7,7 @@ nest.land. We're certain you're gonna make something awesome!
 
 # Style Guide
 
-Use eslint when possible. Name your files using snake_case and follow the
-[Deno Styleguide](https://github.com/denoland/deno/blob/master/docs/contributing/style_guide.md)
-where applicable.
+Use markdown `.md` files for new pages.
+
+# Structure 
+Make sure to add your new page to `docs/.vuepress/config.js`
