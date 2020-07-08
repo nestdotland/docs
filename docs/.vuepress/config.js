@@ -11,13 +11,21 @@ module.exports = {
 
     nav: [
 
-      { text: 'Back to the main site', link: 'https://nest.land' }
+      { text: 'Home', link: 'https://nest.land' }
 
     ],
     sidebar: [
 
       '/',
-      '/installation'
+      '/installation',
+      '/linking-your-api-key',
+      '/initializing-a-module',
+      '/configuration',
+      '/publishing-a-module',
+      '/updating-all-of-your-dependencies',
+      '/installing-a-script-as-an-executable',
+      '/upgrade-eggs',
+      '/technical-questions'
 
     ],
     logo: '/nest_light.png',
