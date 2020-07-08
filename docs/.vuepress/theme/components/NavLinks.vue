@@ -123,36 +123,71 @@ export default {
 </script>
 
 <style lang="stylus">
-.nav-links
-  display inline-block
-  a
-    line-height 1.4rem
-    color inherit
-    border-bottom 2px solid transparent
-    transition border-color .14s
-    &:hover, &.router-link-active
-      color $accentColor
-  .nav-item
-    position relative
-    display inline-block
-    margin-left 1.5rem
-    line-height 2rem
-    &:first-child
-      margin-left 0
-  .repo-link
-    margin-left 1.5rem
 
-@media (max-width: $MQMobile)
   .nav-links
-    .nav-item, .repo-link
-      margin-left 0
+    display inline-block
 
-@media (min-width: $MQMobile)
-  .nav-links a
-    &:hover, &.router-link-active
-      color $textColor
-  .nav-item > a:not(.external)
-    &:hover, &.router-link-active
-      margin-bottom -2px
-      border-bottom 2px solid lighten($accentColor, 8%)
+    a
+      line-height 1.4rem
+      color inherit
+      border-bottom 2px solid transparent
+      transition border-color .14s
+
+      &:hover, &.router-link-active
+        color $accentColor
+
+    .nav-item
+      position relative
+      display inline-block
+      margin-left 1.5rem
+      line-height 2rem
+
+      &:first-child
+        margin-left 0
+
+      &:last-child a
+        background-color #ebfffc
+        color #00947e
+        font-family Inconsolata, monospace
+        font-weight bold !important
+        justify-content center
+        padding calc(.5em - 1px) 1.2em
+        text-align center
+        white-space nowrap
+        border-width 1px
+        align-items center
+        border 1px solid transparent
+        border-radius 4px
+        box-shadow none
+        display inline-flex
+        font-size 1rem
+        position relative
+        vertical-align top
+        user-select none
+        text-decoration none
+
+        svg
+          display none
+
+        &:hover
+          background-color #defffa
+
+    .repo-link
+      margin-left 1.5rem
+
+  @media (max-width: $MQMobile)
+    .nav-links
+      .nav-item, .repo-link
+        margin-left 0
+
+  @media (min-width: $MQMobile)
+    .nav-links a
+      &:hover, &.router-link-active
+        color $textColor
+
+    .nav-item > a:not(.external)
+      &:hover, &.router-link-active
+        margin-bottom -2px
+        border-bottom 2px solid lighten($accentColor, 8%)
+
 </style>
