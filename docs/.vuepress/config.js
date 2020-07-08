@@ -23,6 +23,7 @@ module.exports = {
     logo: '/nest_light.png',
     searchPlaceholder: 'Search in docs...'
 
-  }
+  },
+  destination: 'public'
 
 }

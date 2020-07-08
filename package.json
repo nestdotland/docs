@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "description": "The nest.land docs",
   "scripts": {
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "dev": "vuepress dev",
+    "build": "vuepress build"
   },
   "author": "nest.land team",
   "license": "MIT",
