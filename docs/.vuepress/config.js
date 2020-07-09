@@ -17,14 +17,25 @@ module.exports = {
     sidebar: [
 
       '/',
-      '/installation',
-      '/linking-your-api-key',
-      '/initializing-a-module',
-      '/configuration',
-      '/publishing-a-module',
-      '/updating-all-of-your-dependencies',
-      '/installing-a-script-as-an-executable',
-      '/upgrade-eggs',
+      {
+
+        title: 'Eggs CLI',
+        path: '/eggs',
+        collapsable: false,
+        children: [
+
+          '/eggs/installation',
+          '/eggs/linking-your-api-key',
+          '/eggs/initializing-a-module',
+          '/eggs/configuration',
+          '/eggs/publishing-a-module',
+          '/eggs/updating-all-of-your-dependencies',
+          '/eggs/installing-a-script-as-an-executable',
+          '/eggs/upgrade-eggs'
+
+        ]
+
+      },
       '/technical-questions'
 
     ],

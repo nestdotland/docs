@@ -89,14 +89,26 @@ export default {
       left 50%
       transform translateX(-50%)
 
+      .sidebar-group
+        .sidebar-links
+          li
+            a
+              padding-left 2em
+
       .sidebar-links
         li
           margin-top 0 !important
           margin 5px 0
 
           a
-            padding 0 0 0 1.25em
+            padding 0 0 0 1em
             font-size 1em
+
+            &.sidebar-heading
+              padding-left 1em
+              font-size 1.14em
+              margin-bottom 7px
+              border none
 
             &.active
               font-weight 400
