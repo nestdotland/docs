@@ -66,6 +66,16 @@
     padding 3rem 1.5rem
     background-color #363636
     color #fff
+    position absolute
+    bottom 0
+    right 0
+    left $sidebarWidth
+
+    @media (max-width: $MQMobile)
+      left 0
+
+    @media (max-width: $MQNarrow)
+      left $mobileSidebarWidth
 
     .FooterMain
       display flex
