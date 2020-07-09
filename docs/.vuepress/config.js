@@ -36,11 +36,30 @@ module.exports = {
         ]
 
       },
+      {
+
+        title: 'Rust API',
+        path: '/api',
+        collapsable: false,
+        children: [
+
+          '/api/queries',
+          '/api/mutations'
+
+        ]
+
+      },
       '/technical-questions'
 
     ],
     logo: '/nest_light.png',
-    searchPlaceholder: 'Search in docs...'
+    searchPlaceholder: 'Search in docs...',
+    algolia: {
+
+      apiKey: '314ce2bc4b15cbdc0e3752e19d171daa',
+      indexName: 'nest_land'
+
+    }
 
   },
   destination: 'public'
