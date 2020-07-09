@@ -47,6 +47,7 @@
     <Page
       v-else
       :sidebar-items="sidebarItems"
+      :style="{ paddingBottom: footerHeigh + 'px' }"
     >
 
       <template #top>
@@ -57,12 +58,8 @@
 
       <template #bottom>
 
-        <div>
-
-          <slot name="page-bottom" />
-          <Footer />
-
-        </div>
+        <slot name="page-bottom" />
+        <Footer ref="footer" />
 
       </template>
 
@@ -98,7 +95,8 @@
       return {
 
         isSidebarOpen: false,
-        loading: false
+        loading: false,
+        footerHeigh: 0
 
       }
 
@@ -179,6 +177,7 @@
         this.isSidebarOpen = false
 
       })
+      this.footerHeigh = this.$refs.footer.$el.offsetHeight
 
     },
     methods: {

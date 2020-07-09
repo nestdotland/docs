@@ -159,4 +159,6 @@ function flatten (items, res) {
     overflow auto // clear float
   .next
     float right
+  @media (max-width: $MQMobile)
+    margin-bottom 4em
 </style>
