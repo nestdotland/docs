@@ -40,7 +40,7 @@ files:
   - ./README.md
 ```
 
-## Field information:
+## Field information
 
 - name:
     - The name of your module.
