@@ -65,7 +65,8 @@ module.exports = {
     editLinks: true,
     editLinkText: 'Edit this page on GitHub',
     docsDir: 'docs',
-    lastUpdated: true
+    lastUpdated: true,
+    smoothScroll: true
 
   },
   destination: 'public'
