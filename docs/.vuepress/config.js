@@ -59,7 +59,13 @@ module.exports = {
       apiKey: '314ce2bc4b15cbdc0e3752e19d171daa',
       indexName: 'nest_land'
 
-    }
+    },
+    repo: 'nestdotland/docs',
+    repoLabel: 'Contribute!',
+    editLinks: true,
+    editLinkText: 'Edit this page on GitHub',
+    docsDir: 'docs',
+    lastUpdated: true
 
   },
   destination: 'public'
