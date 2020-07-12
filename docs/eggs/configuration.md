@@ -75,3 +75,4 @@ files:
 - files:
     - All the files that should be uploaded to nest.land. Supports file globbing.
     - Required: true
+> Do not use `./**/*` for the `files` field! This has been known to cause errors in the publishing process.
