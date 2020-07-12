@@ -1,6 +1,6 @@
 # Initializing a module
 
-You'll need to initialize a module with eggs in order to publish it. To do this, you need to type the following command in the root directory of your project:
+You'll need to initialize a module with eggs before publishing it. To do this, you need to type the following command in the root directory of your project:
 ```shell script
 eggs init
 ```
@@ -10,8 +10,8 @@ The name of your new module
 #### module description
 The description of your new module
 #### Is this a stable version?
-Whether the current version of your module is stable or not. You will be able to update this with each new publish
+Whether the current version of your module is stable or not. You will be able to update this with each new publish.
 #### Enter the files and relative directories that nest.land will publish separated by a comma.
-All the files you want to publish with your module. You should include your README.md file here next to all the imported / required files of your module. 
+All the files you want to publish with your module. You should include your `README.md` file here next to all the imported / required files of your module. 
 #### Config format
-Choose between your preffered config format among yaml and json.
+Choose between your preferred config format: yaml or json.
