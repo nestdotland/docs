@@ -11,4 +11,4 @@ This will save your API key on your local machine. Now you will be able to publi
 
 > Do **not** share your API key with anyone. 
 >
-> If you want others to be able to publish a new version to your package, just wait, we are already working on it.
+> If you want others to be able to publish a new version of your module, don't worry. We're working on a better solution!

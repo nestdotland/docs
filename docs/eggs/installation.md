@@ -15,13 +15,13 @@ Check out the tasks we use the required permissions for.
   * __--allow-write__: write to the egg config file 
   * __--allow-read__: read previous config
 * install
-  * __--allow-write__: write to the .eggs-global-modules.json config file 
+  * __--allow-write__: write to the `.eggs-global-modules.json` config file 
   * __--allow-read__: read previous config
   * __--allow-net__: get latest module version
   * __--allow-run__: install module
   * __--allow-env__: get home dir
 * link
-  * __--allow-write__: write to the .nest-api-key config file 
+  * __--allow-write__: write to the `.nest-api-key` config file 
   * __--allow-env__: get home dir
 * publish
   * __--allow-read__: read egg config file
