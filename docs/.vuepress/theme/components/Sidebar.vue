@@ -2,7 +2,7 @@
 
   <aside class="sidebar">
 
-    <NavLinks />
+    <!--<NavLinks />-->
 
     <div class="sidebar-elements">
 
@@ -24,16 +24,17 @@
 </template>
 
 <script>
-import SidebarLinks from '@theme/components/SidebarLinks.vue'
-import NavLinks from '@theme/components/NavLinks.vue'
 
-export default {
-  name: 'Sidebar',
+  import SidebarLinks from '@theme/components/SidebarLinks.vue'
 
-  components: { SidebarLinks, NavLinks },
+  export default {
+    name: 'Sidebar',
 
-  props: ['items']
-}
+    components: { SidebarLinks },
+
+    props: ['items']
+  }
+
 </script>
 
 <style lang="stylus">
