@@ -69,6 +69,11 @@ module.exports = {
     smoothScroll: true
 
   },
+  markdown: {
+
+    lineNumbers: true,
+
+  },
   destination: 'public'
 
 }

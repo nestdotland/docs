@@ -133,6 +133,17 @@ div[class~="language-shell"], div[class~="language-bash"]
     span
       color #4a4a4a !important
 
+  &.line-numbers-mode
+    pre
+      vertical-align inherit
+      padding-left 1.2em
+
+    .line-numbers-wrapper
+      display none
+
+    &::after
+      display none
+
 div[class~="language-javascript"]
   &:before
     content "js"
