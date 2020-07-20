@@ -8,6 +8,34 @@ eggs publish
 
 > Note: Use the same command to publish a new version to an existing module!
 
+## Options
+
+You can use several options:
+```shell script
+eggs publish --bump minor
+eggs publish --version 1.4.2
+```
+
+### --bump
+
+Increment the version by the given release type.
+
+ - patch - Bump the version up to the next patch version.
+ - minor - Bump the version up to the next minor version.
+ - major - Bump the version up to the next major version.
+ - pre - Increment the prerelease version.
+ - prepatch - Bump the version up to the next patch version and down to a prerelease.
+ - preminor - Bump the version up to the next minor version and down to a prerelease.
+ - premajor - Bump the version up to the next major version and down to a prerelease.
+ - prerelease - Increment the prerelease version or increment the patch version from a non-prerelease version.
+
+### --version
+
+Update to the given version.
+
+Version must follow [Semantic Versioning 2.0.0](https://semver.org/).
+
+
 ## Automatic publishing
 
 Thanks to [@divy-work](https://github.com/divy-work), you can now set up a GitHub Actions workflow for automatically publishing your modules!
