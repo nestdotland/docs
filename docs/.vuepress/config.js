@@ -4,7 +4,9 @@ module.exports = {
   description: 'The nest.land docs',
   head: [
 
-    ['link', { rel: 'icon', href: 'https://nest.land/favicon.png' }]
+    ['link', { rel: 'icon', media: '(prefers-color-scheme:light)', href: 'https://nest.land/images/nest.land/favicon_light.svg' }],
+    ['link', { rel: 'icon', media: '(prefers-color-scheme:dark)', href: 'https://nest.land/images/nest.land/favicon_dark.svg' }],
+    ['script', {src: 'https://unpkg.com/favicon-switcher@1.2.2/dist/index.js', crossorigin: 'anonymous', type: 'application/javascript' }]
 
   ],
   themeConfig: {
@@ -52,7 +54,7 @@ module.exports = {
       '/technical-questions'
 
     ],
-    logo: '/nest_light.png',
+    logo: 'https://nest.land/images/nest.land/logo_light.svg',
     searchPlaceholder: 'Search in docs...',
     algolia: {
 

@@ -45,14 +45,12 @@
 
 <script>
 
-  import logo from '@theme/img/nest_dark.png'
-
   export default {
 
     name: 'Footer',
     computed: {
 
-      logo: () => logo
+      logo: () => 'https://nest.land/images/nest.land/logo_dark.svg'
 
     }
 
