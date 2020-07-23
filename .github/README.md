@@ -24,7 +24,7 @@ Nest.land combines Deno with the [Arweave Blockchain](https://www.arweave.org/).
 ### Authors
 
 - [t8](https://github.com/t8), Co-Founder, Frontend, & Project management
-- [zorbyte](https://github.com/zorbyte), Co-Founder & Advisor
+- [zorbyte](https://github.com/zorbyte), Co-Founder, & Advisor
 - [justablob](https://github.com/justablob), Backend
 
 ### Core Team
