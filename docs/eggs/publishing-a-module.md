@@ -54,10 +54,10 @@ jobs:
       - uses: denolib/setup-deno@master
         with:
           deno-version: 1.1.1
-      - run: deno install -A -f --unstable -n eggs https://x.nest.land/eggs@0.1.8/mod.ts
+      - run: deno install -A -f --unstable -n eggs https://x.nest.land/eggs@0.2.0/mod.ts
       - run: |
           export PATH="/home/runner/.deno/bin:$PATH"
-          eggs link --key ${{ secrets.NESTAPIKEY }}
+          eggs link ${{ secrets.NESTAPIKEY }}
           eggs publish
 ```
 To see how to use this, visit our [eggs-ci repository](https://github.com/nestdotland/eggs-ci).
