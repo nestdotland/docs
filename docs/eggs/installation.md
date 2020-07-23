@@ -8,7 +8,9 @@ deno install -A -f --unstable -n eggs https://x.nest.land/eggs@0.2.0/mod.ts
 Alternatively, to be informed of new releases you can install eggs with our global module manager:
 ```shell script
 deno run -A --unstable https://x.nest.land/eggs@0.2.0/mod.ts install -A -f --unstable -n eggs https://x.nest.land/eggs@0.2.0/mod.ts
-# or
+```
+or
+```shell script
 eggs install -A -f --unstable -n eggs https://x.nest.land/eggs@0.2.0/mod.ts
 ```
 
