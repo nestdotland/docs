@@ -2,7 +2,16 @@
 
 To initialize and publish your first module to nest.land, you will need our CLI, **eggs**. You can install it using this command:
 ```shell script
-deno install -A -f --unstable -n eggs https://x.nest.land/eggs@0.1.8/mod.ts
+deno install -A -f --unstable -n eggs https://x.nest.land/eggs@0.2.1/mod.ts
+```
+
+Alternatively, to be informed of new releases you can install eggs with our global module manager:
+```shell script
+deno run -A --unstable https://x.nest.land/eggs@0.2.1/mod.ts install -A -f --unstable -n eggs https://x.nest.land/eggs@0.2.1/mod.ts
+```
+or
+```shell script
+eggs install -A -f --unstable -n eggs https://x.nest.land/eggs@0.2.1/mod.ts
 ```
 
 Please make sure to use the `-A` flag to grant all permissions to eggs, so you can enjoy all features seamlessly.
