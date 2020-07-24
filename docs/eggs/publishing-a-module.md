@@ -10,7 +10,7 @@ eggs publish
 
 ## Options
 
-You can use several options:
+You can use several versioning options as well, instead of stating the version in your `egg` file:
 ```shell script
 eggs publish --bump minor
 eggs publish --version 1.4.2
@@ -31,7 +31,7 @@ Increment the version by the given release type.
 
 ### --version
 
-Update to the given version.
+Set the version.
 
 Version must follow [Semantic Versioning 2.0.0](https://semver.org/).
 
