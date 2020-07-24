@@ -4,7 +4,7 @@ In order to publish modules to the blockchain with our CLI, you must first gener
 
 After you generate your API key, you need to add it in the CLI. To do this, type:
 ```shell script
-eggs link --key [your key]
+eggs link <your key>
 ```
 
 This will save your API key on your local machine. Now you will be able to publish modules to the blockchain without logging in ever again.
