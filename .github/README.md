@@ -13,7 +13,7 @@
 
 ## nest.land docs
 
-This is a [vuepress](https://vuepress.vuejs.org/) based documentation with a custom theme by [@martondev](https://github.com/MartonDev), based on @vuepress/theme-default.
+This is a [vuepress](https://vuepress.vuejs.org/) based documentation with a custom theme by [@martonlederer](https://github.com/martonlederer), based on @vuepress/theme-default.
 
 ## What is nest.land?
 
@@ -31,7 +31,7 @@ Nest.land combines Deno with the [Arweave Blockchain](https://www.arweave.org/).
 
 - [divy-work](https://github.com/divy-work)
 - [maximousblk](https://github.com/maximousblk)
-- [martondev](https://github.com/MartonDev)
+- [martonlederer](https://github.com/martonlederer)
 - [oganexon](https://github.com/oganexon)
 
 ### Contributors

@@ -8,6 +8,34 @@ eggs publish
 
 > Note: Use the same command to publish a new version to an existing module!
 
+## Options
+
+You can use several versioning options as well, instead of stating the version in your `egg` file:
+```shell script
+eggs publish --bump minor
+eggs publish --version 1.4.2
+```
+
+### --bump
+
+Increment the version by the given release type.
+
+ - patch - Bump the version up to the next patch version.
+ - minor - Bump the version up to the next minor version.
+ - major - Bump the version up to the next major version.
+ - pre - Increment the prerelease version.
+ - prepatch - Bump the version up to the next patch version and down to a prerelease.
+ - preminor - Bump the version up to the next minor version and down to a prerelease.
+ - premajor - Bump the version up to the next major version and down to a prerelease.
+ - prerelease - Increment the prerelease version or increment the patch version from a non-prerelease version.
+
+### --version
+
+Set the version.
+
+Version must follow [Semantic Versioning 2.0.0](https://semver.org/).
+
+
 ## Automatic publishing
 
 Thanks to [@divy-work](https://github.com/divy-work), you can now set up a GitHub Actions workflow for automatically publishing your modules!
@@ -26,10 +54,10 @@ jobs:
       - uses: denolib/setup-deno@master
         with:
           deno-version: 1.1.1
-      - run: deno install -A -f --unstable -n eggs https://x.nest.land/eggs@0.1.8/mod.ts
+      - run: deno install -A -f --unstable -n eggs https://x.nest.land/eggs@0.2.1/mod.ts
       - run: |
           export PATH="/home/runner/.deno/bin:$PATH"
-          eggs link --key ${{ secrets.NESTAPIKEY }}
+          eggs link ${{ secrets.NESTAPIKEY }}
           eggs publish
 ```
 To see how to use this, visit our [eggs-ci repository](https://github.com/nestdotland/eggs-ci).
