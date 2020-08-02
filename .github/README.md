@@ -1,7 +1,7 @@
 <br />
 <p align="center">
   <a href="https://nest.land/">
-    <img src="../assets/logo_light.png" alt="nest.land logo (light version)" width="110">
+    <img src="https://nest.land/images/nest.land/logo_light.svg" alt="nest.land logo (light version)" width="110">
   </a>
 
   <h3 align="center">nest.land</h3>
@@ -23,17 +23,23 @@ Nest.land combines Deno with the [Arweave Blockchain](https://www.arweave.org/).
 
 ### Authors
 
-- [tbaumer22](https://github.com/tbaumer22), Co-Founder, Frontend & CLI
-- [zorbyte](https://github.com/zorbyte), Co-Founder, Backend & Project Planning
+- [t8](https://github.com/t8), Co-Founder, Frontend, & Project management
+- [zorbyte](https://github.com/zorbyte), Co-Founder, & Advisor
 - [justablob](https://github.com/justablob), Backend
+
+### Core Team
+
+- [divy-work](https://github.com/divy-work)
+- [maximousblk](https://github.com/maximousblk)
+- [martonlederer](https://github.com/martonlederer)
+- [oganexon](https://github.com/oganexon)
 
 ### Contributors
 
 - [ebebbington](https://github.com/ebebbington)
-- [oganexon](https://github.com/oganexon)
-- [divy-work](https://github.com/divy-work)
-- [martonlederer](https://github.com/martonlederer)
-- [maximousblk](https://github.com/maximousblk)
+- [yg](https://github.com/yg)
+- [jletey](https://github.com/jletey)
+- [qu4k](https://github.com/Qu4k)
 
 ### Special Thanks
 
