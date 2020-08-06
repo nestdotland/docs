@@ -37,7 +37,7 @@ __Result:__
       "latestVersion": "v0.1.0",
       "latestStableVersion": "v0.1.0",
       "uploads": [
-        { name: "eggs" }
+        { "name": "eggs" }
       ]
     }
   }
@@ -77,8 +77,8 @@ __Result:__
         "latestVersion": "v0.1.0",
         "latestStableVersion": "v0.1.0",
         "uploads": [
-          { name: "eggs@v0.0.0" },
-          { name: "eggs@v0.1.0" }
+          { "name": "eggs@v0.0.0" },
+          { "name": "eggs@v0.1.0" }
         ]
       },
       {
@@ -88,8 +88,8 @@ __Result:__
         "latestVersion": "v0.1.8",
         "latestStableVersion": "v0.1.8",
         "packageUploadNames": [
-          { name: "autopilot@v0.1.8" },
-          { name: "autopilot@v0.1.7" }
+          { "name": "autopilot@v0.1.8" },
+          { "name": "autopilot@v0.1.7" }
         ]
       }
     ]
