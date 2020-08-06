@@ -2,7 +2,7 @@
 
 ## Module
 
-#### `package`
+#### `module`
 
 > Query a particular package by its name
 
@@ -14,13 +14,15 @@
 
 ```graphql
 {
-  package(name: "eggs") {
+  module(name: "eggs") {
     name,
     owner,
     normalizedName,
     latestVersion,
     latestStableVersion,
-    packageUploadNames
+    uploads {
+      name
+    }
   }
 }
 ```
@@ -34,8 +36,8 @@ __Result:__
       "normalizedName": "eggs",
       "latestVersion": "v0.1.0",
       "latestStableVersion": "v0.1.0",
-      "packageUploadNames": [
-        "eggs"
+      "uploads": [
+        { name: "eggs" }
       ]
     }
   }
@@ -57,7 +59,9 @@ __Result:__
     normalizedName,
     latestVersion,
     latestStableVersion,
-    packageUploadNames
+    uploads {
+      name
+    }
   }
 }
 ```
@@ -72,9 +76,9 @@ __Result:__
         "normalizedName": "eggs",
         "latestVersion": "v0.1.0",
         "latestStableVersion": "v0.1.0",
-        "packageUploadNames": [
-          "eggs@0.0.0",
-          "eggs@0.1.0"
+        "uploads": [
+          { name: "eggs@v0.0.0" },
+          { name: "eggs@v0.1.0" }
         ]
       },
       {
@@ -84,8 +88,8 @@ __Result:__
         "latestVersion": "v0.1.8",
         "latestStableVersion": "v0.1.8",
         "packageUploadNames": [
-          "autopilot@0.1.8",
-          "autopilot@0.1.7"
+          { name: "autopilot@v0.1.8" },
+          { name: "autopilot@v0.1.7" }
         ]
       }
     ]
@@ -108,10 +112,15 @@ __Result:__
 
 ```graphql
 {
-  user(apiKey: "efc56537a8214c5b9d4320c551790cf3") {
+  user(apiKey: "<API-KEY>") {
     name,
-    normalizedName,
-  	createdAt
+  	createdAt,
+    modules {
+      name
+      uploads {
+        name
+      }
+    }
   }
 }
 ```
@@ -120,9 +129,17 @@ __Result:__
 {
   "data": {
     "user": {
-      "name": "divy[Divy]",
-      "normalizedName": "divy_divy_",
-      "createdAt": "2020-06-27T10:15:55.670232Z"
+      "name": "divy",
+      "createdAt": "2020-06-27T10:15:55.670232Z".
+      "modules": [
+        {
+          "name": "autopilot",
+          "uploads": [
+            { name: "autopilot@v0.1.2" },
+            { name: "autopilot@v0.1.3" }
+          ]
+        }
+      ]
     }
   }
 }
