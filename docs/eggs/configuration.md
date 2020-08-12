@@ -80,3 +80,26 @@ files:
     - All the files that should be uploaded to nest.land. Supports file globbing.
     - Required: true
 > Do not use `./**/*` for the `files` field! This has been known to cause errors in the publishing process.
+
+# eggignore
+
+If you want a more fine grained control of the files you upload to nest.land you can create a 
+`.eggignore` file in your module's root directory. 
+
+Files and directories to be ignored are specified
+one by line, as a [glob expression](https://it.wikipedia.org/wiki/Glob_pattern).
+
+__.eggignore__:
+```sh
+# you can create comments using `#` at the beginning of the line
+
+# files and directories are specified one by line, as a glob expr
+.git*/**
+.idea/**
+.vscode/**
+benchmarks/**
+eggs-debug.log
+
+# you can also esclude particular files, just like .gitignore
+!benchmarks/README.md
+```
