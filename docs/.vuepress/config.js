@@ -33,6 +33,7 @@ module.exports = {
           '/eggs/publishing-a-module',
           '/eggs/updating-all-of-your-dependencies',
           '/eggs/installing-a-script-as-an-executable',
+          '/eggs/dependency-tree',
           '/eggs/upgrade-eggs'
 
         ]

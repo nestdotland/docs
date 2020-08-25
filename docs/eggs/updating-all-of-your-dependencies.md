@@ -1,4 +1,4 @@
-# Update
+# Updating all of your dependencies
 
 You can easily update your dependencies and global scripts with the `update` command.
 ```shell script
