@@ -12,7 +12,7 @@ Using the power of blockchain, you can publish your Deno modules to the [Arweave
 [nest.land](https://nest.land) has many benefits over hosting your modules on [Github](https://github.com), [deno.land/x](https://deno.land/x), or on your own webserver. Let's go over some notable ones!
 
 ### Permanently immutable
-Your files can **never** change and will **never** be deleted. The [Arweave Permaweb](https://www.arweave.org/) is a collectively owned hard drive that never forgets, and allows us to record and store your module code indefinitely.
+Your files can **never** change and will **never** be deleted. The [Arweave Permaweb](https://www.arweave.org/) is a collectively owned distributed hard drive that never forgets, and allows us to record and store your module code indefinitely.
 You can read more about Arweave [here](https://www.arweave.org/#arweave-intro).
                                                                                                                  
 ### Secure and open source
