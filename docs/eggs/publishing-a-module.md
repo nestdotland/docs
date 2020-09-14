@@ -1,6 +1,18 @@
 # Publishing a module
 
-To publish a module, just navigate to the root of your module (where your egg file is located) and use the command shown:
+To configure your module when publishing, you can use:
+ - an eggs.json or eggs.yaml file;
+ - an eggignore file;
+ - the [options](#options) of the publish command.
+
+If there is a conflict between a field in your config, the options of the publish command will take precedence, then the eggignore file and finally the eggs config file.
+
+There are a number of required fields that must appear somewhere in your configuration:
+ - `name`;
+ - `version` and/or `bump`;
+ - `files` and/or `ignore`
+
+To publish a module, just navigate to the root of your module (where your egg file is located) and use the following command:
 ```shell script
 eggs publish
 ```
@@ -10,30 +22,14 @@ eggs publish
 
 ## Options
 
-You can use several versioning options as well, instead of stating the version in your `egg` file:
+You can use several options as well, instead of stating these fields in your `egg` file:
 ```shell script
 eggs publish --bump minor
 eggs publish --version 1.4.2
+eggs publish myModule --description "A deno module" --checkFormat
 ```
 
-### --bump
-
-Increment the version by the given release type.
-
- - patch - Bump the version up to the next patch version.
- - minor - Bump the version up to the next minor version.
- - major - Bump the version up to the next major version.
- - pre - Increment the prerelease version.
- - prepatch - Bump the version up to the next patch version and down to a prerelease.
- - preminor - Bump the version up to the next minor version and down to a prerelease.
- - premajor - Bump the version up to the next major version and down to a prerelease.
- - prerelease - Increment the prerelease version or increment the patch version from a non-prerelease version.
-
-### --version
-
-Set the version.
-
-Version must follow [Semantic Versioning 2.0.0](https://semver.org/).
+For more details, please refer to [configuration](configuration.md#field-information).
 
 
 ## Automatic publishing

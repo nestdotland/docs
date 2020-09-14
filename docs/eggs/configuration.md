@@ -1,6 +1,6 @@
 # Configuration
 
-After you've initialized a project, you'll see a brand new `egg.json` or `egg.yml` file depending on the config format you've chosen. This file is specific to nest.land and needed for the registry.
+After you've initialized a project, you'll see a brand new `egg.json` or `egg.yml` file depending on the config format you've chosen. This file is specific to nest.land.
 
 Note: `egg.json` is different than Node's `package.json` for several reasons:
 
@@ -15,16 +15,23 @@ __JSON__:
     "name": "module-name",
     "description": "Your brief module description",
     "version": "0.0.1",
+    "bump": "patch",
     "entry": "./src/main.ts",
-    "stable": true,
+    "unstable": true,
     "unlisted": false,
-    "fmt": true,
     "repository": "https://github.com/your_name/your_project",
     "files": [
         "./mod.ts",
         "./src/**/*",
         "./README.md"
-    ]
+    ],
+    "ignore": [
+        ".git"
+    ],
+    "checkFormat": true,
+    "checkTests": true,
+    "checkInstallation": true,
+    "checkAll": false,
 }
 ```
 
@@ -33,53 +40,72 @@ __YAML__:
 name: package-name
 description: Your brief package description
 version: 0.0.1
+bump: patch
 entry: ./src/main.ts
-stable: true
+unstable: true
 unlisted: false
-fmt: true
 repository: https://github.com/your_name/your_project
 files:
   - ./mod.ts
   - ./src/**/*
   - ./README.md
+ignore:
+  - .git
+checkFormat: true
+checkTests: true
+checkInstallation: true
+checkAll: false
 ```
 
 ## Field information
 
 - name:
     - The name of your module.
-    - Required: true
 - description:
     - A description of your module that will appear on the gallery.
-    - Required: true
 - version: 
     - Your module version.
-    - Required: false
-        - If not specified, we automatically increment your module version by `0.0.1` on each publish.
+    - Version must follow [Semantic Versioning 2.0.0](https://semver.org/).
+- bump:
+    - Increment the version by the release type.
+        - patch - Bump the version up to the next patch version.
+        - minor - Bump the version up to the next minor version.
+        - major - Bump the version up to the next major version.
+        - pre - Increment the prerelease version.
+        - prepatch - Bump the version up to the next patch version and down to a prerelease.
+        - preminor - Bump the version up to the next minor version and down to a prerelease.
+        - premajor - Bump the version up to the next major version and down to a prerelease.
+        - prerelease - Increment the prerelease version or increment the patch version from a non-prerelease version.
 - entry:
     - The "index file" of your project. This is what users will see when they try to import your module from our registry!
-    - Required: false
-        - Defaults to `./mod.ts`
-- stable:
-    - Is this version stable?
-    - Required: false
-        - Defaults to false
+    - Defaults to `./mod.ts`
+- unstable:
+    - Is this version unstable?
+    - Defaults value is determined by Semantic Versioning rules.
 - unlisted:
     - Should people be able to find this module/version on the gallery?
-    - Required: false
-        - Defaults to false
-- fmt:
-    - Automatically format your code before publishing to the blockchain.
-    - Required: false
-         - Defaults to false    
+    - Defaults to false.
 - repository:
     - A link to your repository.
-    - Required: false
-        - Defaults to null
+    - Defaults to null.
 - files:
     - All the files that should be uploaded to nest.land. Supports file globbing.
-    - Required: true
 > Do not use `./**/*` for the `files` field! This has been known to cause errors in the publishing process.
+- ignore:
+    - All the files that should be ignored when uploading to nest.land. Supports file globbing.
+    - For more details, please refer to [#eggignore](#eggignore).
+- checkFormat:
+    - Automatically format your code before publishing to the blockchain.
+    - Defaults to false.
+- checkTest:
+    - Run `deno test`.
+    - Defaults to false.
+- checkInstallation:
+    - Simulates a dummy installation and check for missing files in the dependency tree..
+    - Defaults to false.
+- checkAll:
+    - Performs all checks..
+    - Defaults to false.
 
 # eggignore
 
