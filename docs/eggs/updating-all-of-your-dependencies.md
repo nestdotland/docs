@@ -42,7 +42,7 @@ import * as http from "https://deno.land/std/http/mod.ts"
 After `eggs update`:
 ```ts
 import * as colors from "https://deno.land/std@0.62.0/fmt/colors.ts"
-import * as bcrypt from "https://deno.land/x/bcrypt@v0.2.1/mod.ts"
-import * as eggs from "https://x.nest.land/eggs@0.2.1/mod.ts"
+import * as bcrypt from "https://deno.land/x/bcrypt@v0.2.2/mod.ts"
+import * as eggs from "https://x.nest.land/eggs@0.2.2/mod.ts"
 import * as http from "https://deno.land/std/http/mod.ts"
 ```

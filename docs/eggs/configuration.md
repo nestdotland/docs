@@ -84,10 +84,10 @@ checkAll: false
     - Defaults value is determined by Semantic Versioning rules.
 - unlisted:
     - Should people be able to find this module/version on the gallery?
-    - Defaults to false.
+    - Defaults to `false`.
 - repository:
     - A link to your repository.
-    - Defaults to null.
+    - Defaults to `null`.
 - files:
     - All the files that should be uploaded to nest.land. Supports file globbing.
 > Do not use `./**/*` for the `files` field! This has been known to cause errors in the publishing process.
@@ -96,16 +96,16 @@ checkAll: false
     - For more details, please refer to [#eggignore](#eggignore).
 - checkFormat:
     - Automatically format your code before publishing to the blockchain.
-    - Defaults to false.
+    - Defaults to `false`.
 - checkTest:
     - Run `deno test`.
-    - Defaults to false.
+    - Defaults to `false`.
 - checkInstallation:
     - Simulates a dummy installation and check for missing files in the dependency tree..
-    - Defaults to false.
+    - Defaults to `false`.
 - checkAll:
     - Performs all checks..
-    - Defaults to false.
+    - Defaults to `true`.
 
 # eggignore
 

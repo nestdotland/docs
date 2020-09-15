@@ -8,5 +8,5 @@ eggs upgrade
 
 Alternatively you can use the install command with the `-f` flag to upgrade.
 ```shell script
-deno install -A -f --unstable -n eggs https://x.nest.land/eggs@0.2.1/mod.ts
+deno install -A -f --unstable -n eggs https://x.nest.land/eggs@0.2.2/mod.ts
 ```
