@@ -1,7 +1,7 @@
 # Dependency tree
 
 It can be tricky to visualize the dependencies of a project using our registry.
-Indeed, the `deno info` command displays the arweave URLs and this is to be expected because that's where the files are located.
+The `deno info` command displays the arweave URLs, and this is to be expected because that is where the files are located.
 
 ![basic output](../.vuepress/public/info-command/basic-output.png)
 
@@ -25,4 +25,3 @@ It is possible to view the entire tree with the `--full` option. This will repla
 ### --raw
 
 If you want to display URLs without beautification, this option will simply display the base URLs.
-

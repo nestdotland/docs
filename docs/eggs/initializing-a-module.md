@@ -1,7 +1,7 @@
 # Initializing a module
 
 It is not necessary to have a configuration file to publish to [nest.land](nest.land).
-However you can choose to create one and we offer you a tool to do so.
+However, you can choose to create one, and we offer you a tool to do so.
 To do this, you need to type the following command in the root directory of your project:
 ```shell script
 eggs init
