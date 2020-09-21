@@ -108,11 +108,11 @@ checkAll: false
 - checkFormat:
     - Automatically format your code before publishing to the blockchain.
     - Accepts a boolean or a string (user defined command).
-    - Defaults to `deno fmt` if `true`.
+    - Executes `deno fmt` if `true`.
 - checkTest:
     - Run tests to ensure module is not broken.
     - Accepts a boolean or a string (user defined command).
-    - Defaults to `deno test -A --unstable` if `true`.
+    - Executes `deno test -A --unstable` if `true`.
 - checkInstallation:
     - Simulates a dummy installation and check for missing files in the dependency tree.
     - Defaults to `false`.
@@ -127,7 +127,7 @@ If you want a more fine grained control of the files you upload to nest.land you
 
 Files and directories to be ignored are specified
 one by line, as a [glob expression](https://it.wikipedia.org/wiki/Glob_pattern).
-They follows the same rules as the [.gitignore pattern format](https://git-scm.com/docs/gitignore#_pattern_format).
+The `.eggignore` follows the same rules as the [.gitignore pattern format](https://git-scm.com/docs/gitignore#_pattern_format).
 
 __.eggignore__:
 ```sh
