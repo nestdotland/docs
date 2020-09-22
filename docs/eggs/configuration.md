@@ -81,7 +81,7 @@ checkAll: false
     - Defaults to `./mod.ts`
 - unstable:
     - Is this version unstable?
-    - Defaults value is determined by Semantic Versioning rules.
+    - Default value is determined by Semantic Versioning rules.
 - unlisted:
     - Should people be able to find this module/version on the gallery?
     - Defaults to false.
