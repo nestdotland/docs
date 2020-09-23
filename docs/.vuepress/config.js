@@ -28,7 +28,6 @@ module.exports = {
 
           '/eggs/installation',
           '/eggs/linking-your-api-key',
-          '/eggs/initializing-a-module',
           '/eggs/configuration',
           '/eggs/publishing-a-module',
           '/eggs/updating-all-of-your-dependencies',
