@@ -27,7 +27,7 @@ __JSON__:
     "version": "0.0.1",
     "bump": "patch",
     "entry": "./src/main.ts",
-    "unstable": true,
+    "stable": false,
     "unlisted": false,
     "repository": "https://github.com/your_name/your_project",
     "files": [
@@ -52,7 +52,7 @@ description: Your brief package description
 version: 0.0.1
 bump: patch
 entry: ./src/main.ts
-unstable: true
+stable: false
 unlisted: false
 repository: https://github.com/your_name/your_project
 files:
@@ -89,9 +89,10 @@ checkAll: false
 - entry:
     - The "index file" of your project. This is what users will see when they try to import your module from our registry!
     - Defaults to `./mod.ts`
-- unstable:
-    - Is this version unstable?
+- stable:
+    - Is this version stable?
     - Default value is determined by Semantic Versioning rules.
+    - Soon to be deprecated.
 - unlisted:
     - Should people be able to find this module/version on the gallery?
     - Defaults to `false`.
