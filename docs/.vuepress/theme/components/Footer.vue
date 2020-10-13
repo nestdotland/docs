@@ -29,7 +29,7 @@
 
     <hr class="FooterSeparate" />
 
-    <p class="license">nest.land is licensed under the <a href="http://opensource.org/licenses/mit-license.php">MIT License</a>.</p>
+    <p class="license">Nest.land is licensed under the <a href="http://opensource.org/licenses/mit-license.php">MIT License</a>.</p>
 
     <div class="SocialIcons">
 

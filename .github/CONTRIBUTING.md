@@ -1,7 +1,7 @@
 # Welcome
 
 Hello there! We'd like to thank you for your interest in contributing to
-nest.land. We're certain you're gonna make something awesome!
+Nest.land. We're certain you're gonna make something awesome!
 
 <!-- Firstly, we'd like to clarify what kind of contribution we're looking for here at nest.land. -->
 

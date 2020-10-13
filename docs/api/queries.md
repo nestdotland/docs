@@ -32,7 +32,7 @@ __Result:__
   "data": {
     "package": {
       "name": "eggs",
-      "owner": "nest.land",
+      "owner": "Nest.land",
       "normalizedName": "eggs",
       "latestVersion": "v0.1.0",
       "latestStableVersion": "v0.1.0",
@@ -72,7 +72,7 @@ __Result:__
     "modules": [
       {
         "name": "eggs",
-        "owner": "nest.land",
+        "owner": "Nest.land",
         "normalizedName": "eggs",
         "latestVersion": "v0.1.0",
         "latestStableVersion": "v0.1.0",
@@ -102,7 +102,7 @@ __Result:__
 
 #### `user`
 
-> Query a particular package by their nest.land api key.
+> Query a particular package by their Nest.land api key.
 
 |param|description|
 |---|---|

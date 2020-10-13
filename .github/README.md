@@ -4,18 +4,18 @@
     <img src="https://nest.land/images/nest.land/logo_light.svg" alt="nest.land logo (light version)" width="110">
   </a>
 
-  <h3 align="center">nest.land</h3>
+  <h3 align="center">Nest.land</h3>
 
   <p align="center">
     A module registry for Deno, on the blockchain
  </p>
 </p>
 
-## nest.land docs
+## Nest.land docs
 
 This is a [vuepress](https://vuepress.vuejs.org/) based documentation with a custom theme by [@martonlederer](https://github.com/martonlederer), based on @vuepress/theme-default.
 
-## What is nest.land?
+## What is Nest.land?
 
 Nest.land combines Deno with the [Arweave Blockchain](https://www.arweave.org/). With us, you can publish your Deno modules to the permaweb, where they can never be deleted. This avoids a major pitfall for web-based module imports while allowing the developer to maximize on the potential of Deno's import design!
 
@@ -53,4 +53,4 @@ Nest.land combines Deno with the [Arweave Blockchain](https://www.arweave.org/).
 
 ## Copyright
 
-nest.land is licensed under the MIT license. Please see the [LICENSE](../LICENSE) file.
+Nest.land is licensed under the MIT license. Please see the [LICENSE](../LICENSE) file.

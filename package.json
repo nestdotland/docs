@@ -1,12 +1,12 @@
 {
   "name": "nest.land-docs",
   "version": "0.0.1",
-  "description": "The nest.land docs",
+  "description": "The Nest.land Docs",
   "scripts": {
     "dev": "vuepress dev docs",
     "build": "vuepress build docs"
   },
-  "author": "nest.land team",
+  "author": "Nest.land Team",
   "license": "MIT",
   "devDependencies": {
     "vuepress": "^1.5.2"
