@@ -2,7 +2,7 @@
 
 ## Configuration file
 
-It is not necessary to have a configuration file to publish to [nest.land](nest.land).
+It is not necessary to have a configuration file to publish to [Nest.land](nest.land).
 However, you can choose to create one, and we offer you a tool to do so.
 To do this, you need to type the following command in the root directory of your project:
 ```shell script
@@ -10,7 +10,7 @@ eggs init
 ```
 By doing this, you'll be prompted with a setup screen, where you will be asked to enter your module details.
 
-After you've initialized a project, you'll see a brand new `egg.json` or `egg.yml` file depending on the config format you've chosen. This file is specific to nest.land.
+After you've initialized a project, you'll see a brand new `egg.json` or `egg.yml` file depending on the config format you've chosen. This file is specific to Nest.land.
 
 Note: `egg.json` is different than Node's `package.json` for several reasons:
 

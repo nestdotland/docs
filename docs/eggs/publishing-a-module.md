@@ -16,7 +16,7 @@ To publish a module, just navigate to the root of your module (where your egg fi
 ```shell script
 eggs publish
 ```
-**Boom!** After this, you'll be returned a link to your module on our [Gallery](https://nest.land/gallery). You should also update your `README.md` with this url so that other users can find your module on [nest.land](https://nest.land)!
+**Boom!** After this, you'll be returned a link to your module on our [Gallery](https://nest.land/gallery). You should also update your `README.md` with this url so that other users can find your module on [Nest.land](https://nest.land)!
 
 > Note: Use the same command to publish a new version to an existing module!
 

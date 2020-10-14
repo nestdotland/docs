@@ -1,7 +1,7 @@
 module.exports = {
 
   title: 'Nest.land Docs',
-  description: 'The nest.land docs',
+  description: 'The Nest.land Docs',
   head: [
 
     ['link', { rel: 'icon', media: '(prefers-color-scheme:light)', href: 'https://nest.land/images/nest.land/favicon_light.svg' }],
