@@ -82,13 +82,13 @@ check: false
 - description:
     - A description of your module that will appear on the gallery.
 - homepage:
-    - A link to your homepage. Usually a repository.
+    - A link to your homepage. (Note: Usually a repository.)
     - Defaults to `null`.
 - unstable:
     - Is this version unstable?
-    - Default value is determined by Semantic Versioning rules.
+    - Default value is determined by [Semantic Versioning](https://semver.org/) rules.
 - unlisted:
-    - Should people be able to find this module/version on the gallery?
+    - Should people be able to find this module/version on the gallery? If `true`, module is hidden.
     - Defaults to `false`.
 - version: 
     - Your module version.
