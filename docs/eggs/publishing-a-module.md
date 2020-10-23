@@ -55,7 +55,7 @@ const config = {
 publish(config, "my-module");
 ```
 
-It is the same function as the CLI, features such as logging are still available.
+This functions identically to the CLI, and features such as logging are still available.
 
 This avoids the need to install eggs. Moreover, every contributor to the project has the same version of eggs.
 
