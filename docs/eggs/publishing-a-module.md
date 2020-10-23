@@ -1,7 +1,9 @@
 # Publishing a module
 
+You can publish your module through our CLI or programmatically, in a typescript file.
+
 To configure your module when publishing, you can use:
- - an eggs.json or eggs.yaml file;
+ - an egg.json or egg.yaml file;
  - an eggignore file;
  - the [options](#options) of the publish command.
 
@@ -20,7 +22,7 @@ eggs publish
 
 > Note: Use the same command to publish a new version to an existing module!
 
-## Options
+### Options
 
 You can use several options as well, instead of stating these fields in your `egg` file:
 ```shell script
@@ -31,6 +33,31 @@ eggs publish myModule --description "A deno module" --checkFormat
 
 For more details, please refer to [configuration](configuration.md#field-information).
 
+Additional options:
+```
+-Y, --yes         Disable confirmation prompts.
+-d, --dry-run     No changes will actually be made, reports the details of what would have been published.
+```
+
+## Programmatically
+
+You just need to import the `publish` function from the latest version of eggs.
+
+```ts
+import { publish } from "https://x.nest.land/eggs@0.3.0/src/commands/publish.ts"
+
+const config = {
+    "description": "Your brief module description",
+    "version": "0.0.1",
+    /* ... */
+};
+
+publish(config, "my-module");
+```
+
+It is the same function as the CLI, features such as logging are still available.
+
+This avoids the need to install eggs. Moreover, every contributor to the project has the same version of eggs.
 
 ## Automatic publishing
 
