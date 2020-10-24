@@ -23,13 +23,13 @@ __JSON__:
 ```json
 {
     "name": "module-name",
-    "description": "Your brief module description",
-    "version": "0.0.1",
-    "bump": "patch",
     "entry": "./src/main.ts",
+    "description": "Your brief module description",
+    "homepage": "https://github.com/your_name/your_project",
     "unstable": true,
     "unlisted": false,
-    "repository": "https://github.com/your_name/your_project",
+    "version": "0.0.1",
+    "releaseType": "patch",
     "files": [
         "./mod.ts",
         "./src/**/*",
@@ -41,20 +41,25 @@ __JSON__:
     "checkFormat": "deno fmt",
     "checkTests": "deno test",
     "checkInstallation": true,
-    "checkAll": false,
+    "check": false,
 }
 ```
+
+> Note: with a JSON file, you can validate your config by adding the following field:
+> ```json
+> "$schema": "https://x.nest.land/eggs@0.3.0/src/schema.json",
+> ```
 
 __YAML__:
 ```yaml
 name: package-name
-description: Your brief package description
-version: 0.0.1
-bump: patch
 entry: ./src/main.ts
+description: Your brief package description
+homepage: https://github.com/your_name/your_project
 unstable: true
 unlisted: false
-repository: https://github.com/your_name/your_project
+version: 0.0.1
+releaseType: patch
 files:
   - ./mod.ts
   - ./src/**/*
@@ -64,19 +69,31 @@ ignore:
 checkFormat: deno fmt
 checkTests: deno test
 checkInstallation: true
-checkAll: false
+check: false
 ```
 
 ### Field information
 
 - name:
     - The name of your module.
+- entry:
+    - The "index file" of your project. This is what users will see when they try to import your module from our registry!
+    - Defaults to `./mod.ts`
 - description:
     - A description of your module that will appear on the gallery.
+- homepage:
+    - A link to your homepage. (Note: Usually a repository.)
+    - Defaults to `null`.
+- unstable:
+    - Is this version unstable?
+    - Default value is determined by [Semantic Versioning](https://semver.org/) rules.
+- unlisted:
+    - Should people be able to find this module/version on the gallery? If `true`, module is hidden.
+    - Defaults to `false`.
 - version: 
     - Your module version.
     - Version must follow [Semantic Versioning 2.0.0](https://semver.org/).
-- bump:
+- releaseType:
     - Increment the version by the release type.
         - patch - Bump the version up to the next patch version.
         - minor - Bump the version up to the next minor version.
@@ -86,18 +103,6 @@ checkAll: false
         - preminor - Bump the version up to the next minor version and down to a prerelease.
         - premajor - Bump the version up to the next major version and down to a prerelease.
         - prerelease - Increment the prerelease version or increment the patch version from a non-prerelease version.
-- entry:
-    - The "index file" of your project. This is what users will see when they try to import your module from our registry!
-    - Defaults to `./mod.ts`
-- unstable:
-    - Is this version unstable?
-    - Default value is determined by Semantic Versioning rules.
-- unlisted:
-    - Should people be able to find this module/version on the gallery?
-    - Defaults to `false`.
-- repository:
-    - A link to your repository.
-    - Defaults to `null`.
 - files:
     - All the files that should be uploaded to nest.land. Supports file globbing.
     - Will throw an error if some files are not found.
@@ -108,7 +113,7 @@ checkAll: false
 - checkFormat:
     - Automatically format your code before publishing to the blockchain.
     - Accepts a boolean or a string (user defined command).
-    - Executes `deno fmt` if `true`.
+    - Executes `deno fmt --check` if `true`.
 - checkTest:
     - Run tests to ensure module is not broken.
     - Accepts a boolean or a string (user defined command).
@@ -116,8 +121,8 @@ checkAll: false
 - checkInstallation:
     - Simulates a dummy installation and check for missing files in the dependency tree.
     - Defaults to `false`.
-- checkAll:
-    - Performs all checks..
+- check:
+    - Performs all checks.
     - Defaults to `true`.
 
 ## .eggignore
