@@ -47,7 +47,7 @@ __JSON__:
 
 > Note: with a JSON file, you can validate your config by adding the following field:
 > ```json
-> "$schema": "https://x.nest.land/eggs@0.3.0/src/schema.json",
+> "$schema": "https://x.nest.land/eggs@0.3.1/src/schema.json",
 > ```
 
 __YAML__:
