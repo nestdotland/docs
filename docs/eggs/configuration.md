@@ -15,7 +15,7 @@ After you've initialized a project, you'll see a brand new `egg.json` or `egg.ym
 Note: `egg.json` is different than Node's `package.json` for several reasons:
 
 1. It only includes information necessary to the registry
-2. An egg configuration file is not, and will ever be, required for a user to run their Deno project
+2. An egg configuration file is not, and will never be, required for a user to run their Deno project
 
 Here is a template egg configuration file with all available fields:
 
