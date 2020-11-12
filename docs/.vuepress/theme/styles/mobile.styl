@@ -7,14 +7,6 @@ $mobileSidebarWidth = $sidebarWidthMobile
 @media (max-width: $MQNarrow)
   .sidebar
     font-size 15px
-    width $mobileSidebarWidth
-
-  .navbar
-    .sidebar-bg-mask
-      width $mobileSidebarWidth
-
-  .page
-    padding-left $mobileSidebarWidth
 
   a.header-anchor
     margin-left -.4em
@@ -22,6 +14,7 @@ $mobileSidebarWidth = $sidebarWidthMobile
 // wide mobile
 @media (max-width: $MQMobile)
   .sidebar
+    width $mobileSidebarWidth
     top 0
     padding-top $navbarHeight
     transform translateX(-100%)
