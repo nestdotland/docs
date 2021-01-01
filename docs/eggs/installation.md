@@ -2,7 +2,7 @@
 
 To publish your first module to nest.land, you will need our CLI, **eggs**. You can install it using this command:
 ```shell script
-deno install -Afq --unstable https://x.nest.land/eggs@0.3.2/eggs.ts
+deno install -Afq --unstable https://x.nest.land/eggs@0.3.4/eggs.ts
 ```
 
 Please make sure to use the `-A` flag to grant all permissions to eggs, so you can enjoy all features seamlessly.
@@ -10,7 +10,7 @@ Please make sure to use the `-A` flag to grant all permissions to eggs, so you c
 To ensure that you fully understand all the new features of the latest versions,
 make sure to read the [releases)(https://github.com/nestdotland/eggs/releases) page!
 
-> Note: You need to upgrade to Deno v1.4.1 or newer in order to use our CLI.
+> Note: You need to upgrade to Deno v1.6.0 or newer in order to use our CLI.
 
 ## Permissions used
 Check out the tasks we use the required permissions for.
