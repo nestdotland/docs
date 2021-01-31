@@ -97,7 +97,9 @@ a:hover {
   text-decoration: underline;
 }
 
-.admonition {
+.admonition,
+.alert,
+[class*="alert--"] {
   border: none;
   background-color: var(--ifm-color-emphasis-200);
   border-radius: 0;
