@@ -1,6 +1,6 @@
 module.exports = {
   title: 'Nest Documentation',
-  tagline: 'Nest.land product',
+  tagline: 'Documentations for all Nest products',
   url: 'https://docs.nest.land',
   baseUrl: '/',
   onBrokenLinks: 'warn',
