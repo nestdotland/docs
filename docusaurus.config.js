@@ -8,7 +8,7 @@ module.exports = {
   onDuplicateRoutes: "warn",
   favicon: "img/favicon.ico",
   organizationName: "nestdotland", // Usually your GitHub org/user name.
-  projectName: "nest", // Usually your repo name.
+  projectName: "docs", // Usually your repo name.
   themeConfig: {
     colorMode: {
       defaultMode: "dark",
@@ -58,7 +58,7 @@ module.exports = {
           // Please change this to your repo.
           routeBasePath: "/",
           editUrl:
-            "https://github.com/facebook/docusaurus/edit/master/website/",
+            "https://github.com/nestdotland/docs/edit/main/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
