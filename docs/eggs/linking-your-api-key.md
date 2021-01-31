@@ -1,4 +1,6 @@
-# Linking your API key
+---
+title: Linking your API key
+---
 
 In order to publish modules to the blockchain with our CLI, you must first generate an API key. See [Getting Started](https://nest.land/#start).
 

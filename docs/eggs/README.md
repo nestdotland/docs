@@ -1,4 +1,9 @@
-# Eggs CLI
+---
+title: Eggs
+sidebar_label: Introduction
+slug: /eggs
+---
+
 The eggs command line interface allows developers to easily manage and publish modules on [Nest.land](https://nest.land).
 
 **Eggs** is written in TypesScript, utilizing the power of Deno. It's lightweight yet efficient, and it provides an easy and safe way for developers to manage their modules.

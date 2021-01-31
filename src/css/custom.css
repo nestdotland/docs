@@ -1,0 +1,142 @@
+/* stylelint-disable docusaurus/copyright-header */
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-code-font-size: 95%;
+
+  --ifm-color-gray-100: #f3f4f6;
+  --ifm-color-gray-200: #e5e7eb;
+  --ifm-color-gray-300: #d1d5db;
+  --ifm-color-gray-400: #9ca3af;
+  --ifm-color-gray-500: #6b7280;
+  --ifm-color-gray-600: #4b5563;
+  --ifm-color-gray-700: #374151;
+  --ifm-color-gray-800: #1f2937;
+  --ifm-color-gray-900: #111827;
+
+  --ifm-color-primary: #8b5cf6;
+  --ifm-color-primary-dark: #7c3aed;
+  --ifm-color-primary-darker: #6d28d9;
+  --ifm-color-primary-darkest: #5b21b6;
+  --ifm-color-primary-light: #a78bfa;
+  --ifm-color-primary-lighter: #c4b5fd;
+  --ifm-color-primary-lightest: #ddd6fe;
+
+  --ifm-color-success: #00a400;
+  --ifm-color-success-dark: #009400;
+  --ifm-color-success-darker: #008b00;
+  --ifm-color-success-darkest: #007300;
+  --ifm-color-success-light: #26b226;
+  --ifm-color-success-lighter: #4dbf4d;
+  --ifm-color-success-lightest: #80d280;
+
+  --ifm-color-info: #54c7ec;
+  --ifm-color-info-dark: #4cb3d4;
+  --ifm-color-info-darker: #47a9c9;
+  --ifm-color-info-darkest: #3b8ba5;
+  --ifm-color-info-light: #6ecfef;
+  --ifm-color-info-lighter: #87d8f2;
+  --ifm-color-info-lightest: #aae3f6;
+
+  --ifm-color-warning: #ffba00;
+  --ifm-color-warning-dark: #e6a700;
+  --ifm-color-warning-darker: #d99e00;
+  --ifm-color-warning-darkest: #b38200;
+  --ifm-color-warning-light: #ffc426;
+  --ifm-color-warning-lighter: #ffcf4d;
+  --ifm-color-warning-lightest: #ffdd80;
+
+  --ifm-color-danger: #fa383e;
+  --ifm-color-danger-dark: #e13238;
+  --ifm-color-danger-darker: #d53035;
+  --ifm-color-danger-darkest: #af272b;
+  --ifm-color-danger-light: #fb565b;
+  --ifm-color-danger-lighter: #fb7478;
+  --ifm-color-danger-lightest: #fd9c9f;
+
+  --ifm-color-success: var(--ifm-color-success-light);
+  --ifm-color-info: var(--ifm-color-info-light);
+  --ifm-color-warning: var(--ifm-color-warning-light);
+  --ifm-color-danger: var(--ifm-color-danger-light);
+
+  --ifm-global-radius: 0.2rem;
+
+  --ra-admonition-icon-color: var(--ifm-alert-border-color);
+  --ifm-alert-color: var(--ifm-alert-border-color);
+}
+
+html[data-theme='dark'] {
+  --ifm-background-color: var(--ifm-color-gray-900);
+  --ifm-background-surface-color: var(--ifm-color-gray-800);
+}
+
+.docusaurus-highlight-code-line {
+  background-color: rgb(72, 77, 91);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+.alert {
+  background-color: var(--ifm-background-surface-color);
+  border-color: var(--ifm-alert-border-color);
+  color: var(--ifm-font-color-base);
+}
+
+.alert a {
+  color: var(--ifm-color-primary);
+  text-decoration: var(--ifm-link-decoration);
+}
+
+.alert .admonition-heading {
+  color: var(--ifm-font-color-base);
+}
+
+.admonition-icon svg {
+  fill: var(--ifm-alert-border-color);
+  stroke: var(--ifm-alert-border-color);
+  margin-right: 12px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.admonition {
+  border: none;
+  background-color: var(--ifm-color-emphasis-100);
+  border-radius: 0;
+  border-left-width: 0.3rem;
+  border-left-style: solid;
+  border-color: var(--ifm-alert-border-color);
+}
+
+details {
+  background-color: var(--ifm-color-emphasis-100);
+  border-radius: 0;
+  border-left-width: 0.3rem;
+  border-left-style: solid;
+  border-color: var(--ifm-color-emphasis-900);
+  padding: var(--ifm-alert-padding-vertical) var(--ifm-alert-padding-horizontal);
+  margin-bottom: 1em;
+}
+
+summary {
+  outline: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+details[open] summary {
+  margin-bottom: 1em;
+}
+
+.alert--secondary {
+  --ifm-alert-background-color: var(--ifm-color-emphasis-900);
+  --ifm-alert-border-color: var(--ifm-color-emphasis-900);
+}

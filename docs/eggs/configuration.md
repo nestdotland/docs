@@ -1,6 +1,6 @@
-# Configuration
-
-## Configuration file
+---
+title: Configuration
+---
 
 It is not necessary to have a configuration file to publish to [Nest.land](nest.land).
 However, you can choose to create one, and we offer you a tool to do so.

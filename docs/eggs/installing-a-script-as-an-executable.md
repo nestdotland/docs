@@ -1,4 +1,6 @@
-# Installing a script as an executable
+---
+title: Installing a script
+---
 
 Just like *deno install*, you can install modules globally with eggs. By installing it this way, you will be notified if an update is available for your module! 
 

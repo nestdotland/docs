@@ -1,4 +1,6 @@
-# Queries
+---
+title: Queries
+---
 
 ## Module
 

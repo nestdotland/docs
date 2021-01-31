@@ -1,4 +1,6 @@
-# Mutations
+---
+title: Mutations
+---
 
 > This part of the documentation is not complete.
 ## Module

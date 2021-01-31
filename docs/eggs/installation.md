@@ -1,4 +1,6 @@
-# Installation
+---
+title: Installation
+---
 
 To publish your first module to nest.land, you will need our CLI, **eggs**. You can install it using this command:
 ```shell script
@@ -14,27 +16,39 @@ make sure to read the [releases](https://github.com/nestdotland/eggs/releases) p
 
 ## Permissions used
 Check out the tasks we use the required permissions for.
-* init
-  * __--allow-write__: write to the egg config file 
-  * __--allow-read__: read previous config
-* install
-  * __--allow-write__: write to the `.eggs-global-modules.json` config file 
-  * __--allow-read__: read previous config
-  * __--allow-net__: get latest module version
-  * __--allow-run__: install module
-  * __--allow-env__: get home dir
-* link
-  * __--allow-write__: write to the `.nest-api-key` config file 
-  * __--allow-env__: get home dir
-* publish
-  * __--allow-read__: read egg config file
-  * __--allow-net__: fetch module data & publish module
-* update
-  * __--allow-write__: write to the dependencies file 
-  * __--allow-read__: read dependencies file 
-  * __--allow-net__: get the latest module version
-  * __--allow-env__: get global config file for executables
-  * __--allow-run__: update executables
-* upgrade
-  * __--allow-net__: get the latest eggs version
-  * __--allow-run__: upgrade eggs
+
+**init**
+
+  * `write` - write to the egg config file 
+  * `read` - read previous config
+
+**install**
+
+  * `write` - write to the `.eggs-global-modules.json` config file 
+  * `read` - read previous config
+  * `net` - get latest module version
+  * `run` - install module
+  * `env` - get home dir
+
+**link**
+
+  * `write` - write to the `.nest-api-key` config file 
+  * `env` - get home dir
+
+**publish**
+
+  * `read` - read egg config file
+  * `net` - fetch module data & publish module
+
+**update**
+
+  * `write` - write to the dependencies file 
+  * `read` - read dependencies file 
+  * `net` - get the latest module version
+  * `env` - get global config file for executables
+  * `run` - update executables
+
+**upgrade**
+
+  * `net` - get the latest eggs version
+  * `run` - upgrade eggs

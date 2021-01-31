@@ -1,4 +1,6 @@
-# Upgrade eggs
+---
+title: Upgrade eggs
+---
 
 To upgrade the eggs CLI, use the command shown:
 

@@ -1,4 +1,6 @@
-# Publishing a module
+---
+title: Publishing a module
+---
 
 You can publish your module through our CLI or programmatically, in a typescript file.
 
@@ -96,7 +98,7 @@ In addition, you'll have the option of adding our official badge to your project
 ```
 [![nest badge](https://nest.land/badge.svg)](https://nest.land/package/your-module)
 ```
-<hr>
+<hr />
 
 **Block Edition**
 
@@ -105,7 +107,7 @@ In addition, you'll have the option of adding our official badge to your project
 ```
 [![nest badge](https://nest.land/badge-block.svg)](https://nest.land/package/your-module)
 ```
-<hr>
+<hr />
 
 or if you want to support us *louder*, you can use the large badge:
 
