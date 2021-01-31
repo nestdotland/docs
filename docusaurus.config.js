@@ -1,6 +1,6 @@
 module.exports = {
   title: 'Nest Documentation',
-  tagline: 'The tagline of my site',
+  tagline: 'Nest.land product',
   url: 'https://docs.nest.land',
   baseUrl: '/',
   onBrokenLinks: 'warn',
@@ -12,7 +12,6 @@ module.exports = {
   themeConfig: {
     colorMode: {
       defaultMode: 'dark',
-      respectPrefersColorScheme: true,
     },
     algolia: {
       apiKey: '314ce2bc4b15cbdc0e3752e19d171daa',
