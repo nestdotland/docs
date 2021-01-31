@@ -1,4 +1,8 @@
-# Nest API
+---
+title: Nest API
+sidebar_label: Introduction
+slug: /api
+---
 
 A Graphql API for the Nest.land registry written in Rust.
 

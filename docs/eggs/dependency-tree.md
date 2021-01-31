@@ -1,9 +1,11 @@
-# Dependency tree
+---
+title: Dependency tree
+---
 
 It can be tricky to visualize the dependencies of a project using our registry.
 The `deno info` command displays the arweave URLs, and this is to be expected because that is where the files are located.
 
-![basic output](../.vuepress/public/info-command/basic-output.png)
+![basic output](/img/info-command/basic-output.png)
 
 You can then use the `eggs info` command which addresses this problem and improves the appearance of the tree.
 Redundant imports (which are already elsewhere in the tree) are represented by `...` to save space.
@@ -12,7 +14,7 @@ Redundant imports (which are already elsewhere in the tree) are represented by `
 eggs info
 ```
 
-![colorful output](./../.vuepress/public/info-command/colorful-output.png)
+![colorful output](/img/info-command/colorful-output.png)
 
 ## Options
 
