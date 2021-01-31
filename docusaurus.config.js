@@ -57,8 +57,7 @@ module.exports = {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           routeBasePath: "/",
-          editUrl:
-            "https://github.com/nestdotland/docs/edit/main/",
+          editUrl: "https://github.com/nestdotland/docs/edit/main/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
