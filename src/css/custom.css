@@ -8,7 +8,6 @@
 /* You can override the default Infima variables here. */
 :root {
   --ifm-code-font-size: 95%;
-
   --ifm-color-gray-100: #f3f4f6;
   --ifm-color-gray-200: #e5e7eb;
   --ifm-color-gray-300: #d1d5db;
@@ -18,7 +17,6 @@
   --ifm-color-gray-700: #374151;
   --ifm-color-gray-800: #1f2937;
   --ifm-color-gray-900: #111827;
-
   --ifm-color-primary: #8b5cf6;
   --ifm-color-primary-dark: #743cf4;
   --ifm-color-primary-darker: #692cf3;
@@ -26,7 +24,6 @@
   --ifm-color-primary-light: #a27cf8;
   --ifm-color-primary-lighter: #ad8cf9;
   --ifm-color-primary-lightest: #cfbcfb;
-
   --ifm-color-success: #10b981;
   --ifm-color-success-dark: #0ea774;
   --ifm-color-success-darker: #0e9d6e;
@@ -34,7 +31,6 @@
   --ifm-color-success-light: #12cc8e;
   --ifm-color-success-lighter: #12d594;
   --ifm-color-success-lightest: #1aeba6;
-
   --ifm-color-info: #0ea5e9;
   --ifm-color-info-dark: #0d95d2;
   --ifm-color-info-darker: #0c8cc6;
@@ -42,7 +38,6 @@
   --ifm-color-info-light: #1eb0f1;
   --ifm-color-info-lighter: #2ab4f2;
   --ifm-color-info-lightest: #4dc0f4;
-
   --ifm-color-warning: #eab308;
   --ifm-color-warning-dark: #d3a107;
   --ifm-color-warning-darker: #c79807;
@@ -50,7 +45,6 @@
   --ifm-color-warning-light: #f7c013;
   --ifm-color-warning-lighter: #f7c31f;
   --ifm-color-warning-lightest: #f9cc42;
-
   --ifm-color-danger: #f43f5e;
   --ifm-color-danger-dark: #f22246;
   --ifm-color-danger-darker: #f21339;
@@ -58,19 +52,16 @@
   --ifm-color-danger-light: #f65c76;
   --ifm-color-danger-lighter: #f66b83;
   --ifm-color-danger-lightest: #f996a7;
-
   --ifm-color-success: var(--ifm-color-success-light);
   --ifm-color-info: var(--ifm-color-info-light);
   --ifm-color-warning: var(--ifm-color-warning-light);
   --ifm-color-danger: var(--ifm-color-danger-light);
-
   --ifm-global-radius: 0.2rem;
-
   --ra-admonition-icon-color: var(--ifm-alert-border-color);
   --ifm-alert-color: var(--ifm-alert-border-color);
 }
 
-html[data-theme='dark'] {
+html[data-theme="dark"] {
   --ifm-background-color: var(--ifm-color-gray-800);
   --ifm-background-surface-color: var(--ifm-color-gray-900);
 }

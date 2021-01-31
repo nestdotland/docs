@@ -1,7 +1,7 @@
 ---
 name: 🐛 Bug Report
 about: Submit a bug report
-labels: 'bug report, needs triage'
+labels: "bug report, needs triage"
 ---
 
 <!--

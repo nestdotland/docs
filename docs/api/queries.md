@@ -8,27 +8,29 @@ title: Queries
 
 > Query a particular package by its name
 
-|param|description|
-|---|---|
-|name|name of the module|
+| param | description        |
+| ----- | ------------------ |
+| name  | name of the module |
 
 ##### example query
 
 ```graphql
 {
   module(name: "eggs") {
-    name,
-    owner,
-    normalizedName,
-    latestVersion,
-    latestStableVersion,
+    name
+    owner
+    normalizedName
+    latestVersion
+    latestStableVersion
     uploads {
       name
     }
   }
 }
 ```
-__Result:__
+
+**Result:**
+
 ```json
 {
   "data": {
@@ -38,14 +40,11 @@ __Result:__
       "normalizedName": "eggs",
       "latestVersion": "v0.1.0",
       "latestStableVersion": "v0.1.0",
-      "uploads": [
-        { "name": "eggs" }
-      ]
+      "uploads": [{ "name": "eggs" }]
     }
   }
 }
 ```
-
 
 #### `modules`
 
@@ -56,18 +55,20 @@ __Result:__
 ```graphql
 {
   modules {
-    name,
-    owner,
-    normalizedName,
-    latestVersion,
-    latestStableVersion,
+    name
+    owner
+    normalizedName
+    latestVersion
+    latestStableVersion
     uploads {
       name
     }
   }
 }
 ```
-__Result:__
+
+**Result:**
+
 ```json
 {
   "data": {
@@ -78,10 +79,7 @@ __Result:__
         "normalizedName": "eggs",
         "latestVersion": "v0.1.0",
         "latestStableVersion": "v0.1.0",
-        "uploads": [
-          { "name": "eggs@v0.0.0" },
-          { "name": "eggs@v0.1.0" }
-        ]
+        "uploads": [{ "name": "eggs@v0.0.0" }, { "name": "eggs@v0.1.0" }]
       },
       {
         "name": "autopilot",
@@ -99,24 +97,23 @@ __Result:__
 }
 ```
 
-
 ## User
 
 #### `user`
 
 > Query a particular package by their Nest.land api key.
 
-|param|description|
-|---|---|
-|apiKey|apiKey of the user|
+| param  | description        |
+| ------ | ------------------ |
+| apiKey | apiKey of the user |
 
 ##### example query
 
 ```graphql
 {
   user(apiKey: "<API-KEY>") {
-    name,
-  	createdAt,
+    name
+    createdAt
     modules {
       name
       uploads {
