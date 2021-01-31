@@ -35,7 +35,7 @@ module.exports = {
           position: "right",
         },
         {
-          href: "https://github.com/nestdotland",
+          href: "https://twitter.com/nestdotland",
           label: "Twitter",
           position: "right",
         },
