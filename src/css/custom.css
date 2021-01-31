@@ -111,7 +111,7 @@ a:hover {
   border: none;
   background-color: var(--ifm-color-emphasis-100);
   border-radius: 0;
-  border-left-width: 0.3rem;
+  border-left-width: 0.2rem;
   border-left-style: solid;
   border-color: var(--ifm-alert-border-color);
 }
@@ -119,7 +119,7 @@ a:hover {
 details {
   background-color: var(--ifm-color-emphasis-100);
   border-radius: 0;
-  border-left-width: 0.3rem;
+  border-left-width: 0.2rem;
   border-left-style: solid;
   border-color: var(--ifm-color-emphasis-900);
   padding: var(--ifm-alert-padding-vertical) var(--ifm-alert-padding-horizontal);
