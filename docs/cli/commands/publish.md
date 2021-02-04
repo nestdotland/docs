@@ -1,9 +1,7 @@
 ---
-title: Publish command
-sidebar_label: Publish
+title: nest publish
+sidebar_label: publish
 ---
-
-## Description
 
 Publish your module to the nest.land registry
 

@@ -1,7 +1,6 @@
 ---
-title: Introduction
-sidebar_label: Introduction
-slug: /cli/commands
+title: Overview
+sidebar_label: Overview
 ---
 
 ## Usage
