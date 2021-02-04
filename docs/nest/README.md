@@ -1,5 +1,5 @@
 ---
-title: Nest
+title: Nest.land
 sidebar_label: Introduction
 slug: /
 ---
@@ -34,6 +34,13 @@ You can find our source code [here](https://github.com/nestdotland).
 2. Your code is served from a truly decentralized network of computers from around the world.
 3. You don't need to vendor your modules!
 
-## Questions?
+## Staying informed
 
-Start a [GitHub Discussion](https://github.com/nestdotland/nest.land/discussions) or [tweet at us](https://twitter.com/nestdotland)!
+- [Github](https://github.com/nestdotland)
+- [Twitter](https://twitter.com/nestdotland)
+- [Discord](https://discord.gg/hYUsX3H)
+- [Blog](https://nest.land/blog)
+
+## Something missing / Questions ?
+
+If you find issues with the documentation or have suggestions on how to improve the documentation or the project in general, please [file an issue](https://github.com/nestdotland/nest.land/issues/new/choose) for us, start a new [GitHub Discussion](https://github.com/nestdotland/nest.land/discussions) or [tweet at us](https://twitter.com/nestdotland)!

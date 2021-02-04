@@ -1,7 +1,14 @@
 module.exports = {
   someSidebar: {
-    Nest: ["nest/README"],
-    "Nest CLI": ["cli/README"],
+    "Nest.land": ["nest/README"],
+    "Nest CLI": ["cli/README",
+      {
+        Commands: [
+          "cli/commands/README",
+          "cli/commands/publish"
+        ]
+      }
+    ],
     Eggs: [
       "eggs/README",
       "eggs/installation",
