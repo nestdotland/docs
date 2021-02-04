@@ -1,6 +1,6 @@
 ---
-title: Nest CLI
-sidebar_label: Introduction
+title: Getting started
+sidebar_label: Getting started
 slug: /cli
 ---
 
@@ -16,15 +16,13 @@ The nest command line interface allows developers to easily create and publish m
 
 It's written in TypesScript, utilizing the power of Deno. It's lightweight yet efficient, and it provides an easy and safe way for developers to manage their modules.
 
-## Getting started
-
-**INSTALL**
+### Install
 
 ```shell script
 deno install -Afq https://nest.land/-/nest/nest.ts
 ```
 
-**PUBLISH**
+### Publish
 
 Log into your Nest account
 
@@ -49,9 +47,9 @@ Publish to Nest
 nest publish <version>
 ```
 
-You should now see your module on the [gallery](https://nest.land/gallery)!
+You should now see your module on the [gallery](https://nest.land/gallery) !
 
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are greatly appreciated. [Learn more](https://github.com/nestdotland/nest/.github/CONTRIBUTING.md)
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are greatly appreciated. [Learn more](https://github.com/nestdotland/nest/blob/main/.github/CONTRIBUTING.md)
 

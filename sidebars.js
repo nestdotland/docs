@@ -3,7 +3,6 @@ module.exports = {
     "Nest.land": ["nest/README"],
     "Nest CLI": [
       "cli/README",
-      "cli/overview",
       {
         Commands: ["cli/commands/publish"],
       },
@@ -13,6 +12,7 @@ module.exports = {
           "cli/configuration/ignore",
         ],
       },
+      "cli/faq",
       "cli/cicd",
     ],
     Eggs: [
