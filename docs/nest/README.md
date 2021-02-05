@@ -43,4 +43,4 @@ You can find our source code [here](https://github.com/nestdotland).
 
 ## Something missing / Questions ?
 
-If you find issues with the documentation or have suggestions on how to improve the documentation or the project in general, please [file an issue](https://github.com/nestdotland/nest.land/issues/new/choose) for us, start a new [GitHub Discussion](https://github.com/nestdotland/nest.land/discussions) or [tweet at us](https://twitter.com/nestdotland)!
+If you find issues with the documentation or have suggestions on how to improve the documentation or the project in general, please [file an issue](https://github.com/nestdotland/nest.land/issues/new/choose) for us, start a new [GitHub Discussion](https://github.com/nestdotland/nest.land/discussions), or [tweet at us](https://twitter.com/nestdotland)!

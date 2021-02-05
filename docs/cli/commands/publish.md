@@ -3,7 +3,7 @@ title: nest publish
 sidebar_label: publish
 ---
 
-Publish your module to the nest.land registry
+Publish your module to the nest.land registry.
 
 ```shell script
 nest publish [version]
@@ -59,7 +59,9 @@ nest publish 1.2.3 --pre beta     # module@1.2.3-beta.0
 nest publish patch --pre rc       # module@1.0.1-rc.0
 nest publish minor --pre asdf     # module@1.1.0-asdf.0
 nest publish major --pre pre      # module@1.0.1-pre.0
+```
 
-nest --deno ^1.7.1
-nest --deno ">=1.2.3 <1.7.0"
+```shell script
+nest publish --deno ^1.7.1
+nest publish --deno ">=1.2.3 <1.7.0"
 ```
