@@ -9,8 +9,6 @@ Add an existing user account.
 nest login [username] [token]
 ```
 
-See [users.json](../configuration/users.json.md) for technical details.
-
 :::note New to Nest.land?
 [Create an account](https://nest.land/#).
 :::

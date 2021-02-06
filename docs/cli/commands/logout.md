@@ -9,8 +9,6 @@ Remove an existing user account.
 nest logout [username]
 ```
 
-See [users.json](../configuration/users.json.md) for technical details.
-
 ## Arguments
 
  | argument | description |

@@ -20,8 +20,6 @@ module.exports = {
         "Configuration files": [
           "cli/configuration/module.json",
           "cli/configuration/ignore",
-          "cli/configuration/data.json",
-          "cli/configuration/users.json",
         ],
       },
       "cli/faq",
