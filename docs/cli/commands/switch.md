@@ -15,9 +15,9 @@ Use this command when you need to work on multiple projects with different accou
 
 ## Arguments
 
- argument | description
- -------- | -----------
- username | A username
+ | argument | description |
+ | -------- | ----------- |
+ | username | A username  |
 
 :::info
 If `[username]` is missing, you will be prompted to enter it.

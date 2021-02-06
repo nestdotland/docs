@@ -11,9 +11,9 @@ nest help [...command]
 
 ## Arguments
 
- argument | description
- -------- | -----------
- ...command | A command or a sub-command
+ | argument   | description                |
+ | ---------- | -------------------------- |
+ | ...command | A command or a sub-command |
 
 :::info
 Show the global help if no command is provided

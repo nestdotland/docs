@@ -17,10 +17,10 @@ See [users.json](../configuration/users.json.md) for technical details.
 
 ## Arguments
 
- argument | description
- -------- | -----------
- username | A username
- token | A login token
+ | argument | description   |
+ | -------- | ------------- |
+ | username | A username    |
+ | token    | A login token |
 
 :::info
 If `[username]` or `[token]` is missing, you will be prompted to enter it.

@@ -11,10 +11,10 @@ nest setup [author] [module]
 
 ## Arguments
 
- argument | description
- -------- | -----------
- author | A module author
- module | A module name
+ | argument | description     |
+ | -------- | --------------- |
+ | author   | A module author |
+ | module   | A module name   |
 
 :::info
 If `[author]` or `[module]` is missing, you will be prompted to enter it.

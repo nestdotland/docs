@@ -11,9 +11,9 @@ nest publish [version]
 
 ## Arguments
 
- argument | default | description
- -------- | ------- | -----------
- version | `"patch"` | [Semver tag](https://semver.org/) or one of "major", "minor", "patch"
+ | argument | default   | description                                                           |
+ | -------- | --------- | --------------------------------------------------------------------- |
+ | version  | `"patch"` | [Semver tag](https://semver.org/) or one of "major", "minor", "patch" |
 
 If a release type is provided as `version`, increments the previous version from the given release type. See [examples](#examples) below.
 
@@ -23,15 +23,15 @@ If no version is published yet, `version` defaults to `0.1.0`
 
 ## Options
 
- options | description 
- ------- | ----------- 
- `-Y, --yes` | Disable confirmation prompts
- `-d, --dry-run` | No changes will actually be made, reports the details of what would have been published
- `-g, --git-tag` | Use the latest git tag as version (ignored if `[version]` is provided)
- `--pre [tag]` | Publish as a prerelease with optional identifier
- `--deno <semver>` | [Semver range](https://github.com/nestdotland/semver#ranges) for supported deno versions
- `-w, --wallet <path>` | Path to custom arweave wallet
- `--unlisted` | Publish as an unlisted version
+ | options               | description                                                                              |
+ | --------------------- | ---------------------------------------------------------------------------------------- |
+ | `-Y, --yes`           | Disable confirmation prompts                                                             |
+ | `-d, --dry-run`       | No changes will actually be made, reports the details of what would have been published  |
+ | `-g, --git-tag`       | Use the latest git tag as version (ignored if `[version]` is provided)                   |
+ | `--pre [tag]`         | Publish as a prerelease with optional identifier                                         |
+ | `--deno <semver>`     | [Semver range](https://github.com/nestdotland/semver#ranges) for supported deno versions |
+ | `-w, --wallet <path>` | Path to custom arweave wallet                                                            |
+ | `--unlisted`          | Publish as an unlisted version                                                           |
 
 :::tip
 Use `--git-tag` when publishing to [deno.land](https://deno.land) and [nest.land](https://nest.land) on Github.

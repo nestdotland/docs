@@ -11,9 +11,9 @@ nest upgrade [version]
 
 ## Arguments
 
- argument | default | description
- -------- | ------- | -----------
- version | latest | A given semver version
+ | argument | default | description            |
+ | -------- | ------- | ---------------------- |
+ | version  | latest  | A given semver version |
 
 ## Examples
 
