@@ -9,10 +9,10 @@ None of the properties described in this section are required to publish your mo
 
 | field       | type       | description                                                                                                                                   |
 | ----------- | ---------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| main        | `string`   | A file path to the primary entry point to your program.                                                                                       |
-| bin         | `string[]` | An array of file path to one or more executable files.                                                                                        |
 | fullName    | `string`   | A longer name, without character restrictions or length limit.                                                                                |
 | description | `string`   | This helps people discover your module by explaining its purpose.                                                                             |
+| main        | `string`   | A file path to the primary entry point to your program.                                                                                       |
+| bin         | `string[]` | An array of file path to one or more executable files.                                                                                        |
 | logo        | `string`   | A file path to your module logo. Will be displayed when module is featured.                                                                   |
 | homepage    | `string`   | The url to the project homepage.                                                                                                              |
 | repository  | `string`   | Specify the place where your code lives. This is helpful for people who want to contribute.                                                   |
@@ -37,10 +37,10 @@ Here is an example of a complete configuration:
 
 ```json
 {
-    "main": "nest.ts",
-    "bin": ["bin/cli.ts", "eggs.ts"],
     "fullName": "Nest CLI",
     "description": "Nest's official CLI to manage your modules",
+    "main": "nest.ts",
+    "bin": ["bin/cli.ts", "eggs.ts"],
     "logo": "assets/logo.png",
     "homepage": "https://nest.land",
     "repository": "https://github.com/nestdotland/nest",

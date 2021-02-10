@@ -62,6 +62,10 @@ nest publish major --pre pre      # module@1.0.1-pre.0
 ```
 
 ```shell script
+nest publish --git-tag            # module@[latest git tag]
+```
+
+```shell script
 nest publish --deno ^1.7.1
 nest publish --deno ">=1.2.3 <1.7.0"
 ```

@@ -7,12 +7,20 @@ module.exports = {
         Commands: [
           "cli/commands/help",
           "cli/commands/init",
+          "cli/commands/setup",
           "cli/commands/login",
           "cli/commands/logout",
-          "cli/commands/publish",
-          "cli/commands/setup",
           "cli/commands/switch",
+          "cli/commands/publish",
           "cli/commands/sync",
+          {
+            config: [
+              "cli/commands/config/pull",
+              "cli/commands/config/push",
+              "cli/commands/config/diff",
+              "cli/commands/config/status",
+            ],
+          },
           "cli/commands/upgrade",
         ],
       },
