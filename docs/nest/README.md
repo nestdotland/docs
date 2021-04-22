@@ -10,7 +10,7 @@ Nest.land is a first-of-its-kind immutable module registry and CDN built for [De
 
 ## How does it work?
 
-Using Nest, you can publish your Deno modules to the [Arweave Permaweb](https://www.arweave.org/), where they can _never_ be deleted or modified. With this feature, you can make sure that your users' modules will never recieve unintended modifications or be maliciously manipulated.
+Using Nest, you can publish your Deno modules to the [Arweave Permaweb](https://www.arweave.org/), where they can _never_ be deleted or modified. With this feature, you can make sure that your users' modules will never receive unintended modifications or be maliciously manipulated.
 
 ## What are the benefits of Nest.land?
 
