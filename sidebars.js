@@ -13,6 +13,6 @@ module.exports = {
       "eggs/installing-a-script-as-an-executable",
       "eggs/upgrade-eggs",
     ],
-    API: ["api/README", "api/mutations", "api/queries"],
+    API: ["api/README"],
   },
 };
