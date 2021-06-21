@@ -4,8 +4,10 @@ sidebar_label: Introduction
 slug: /api
 ---
 
-A Graphql API for the Nest.land registry written in Rust.
+:::caution Not a 404 but almost
 
-> The Rust API is still in development. You can access the docs here, before the release.
+This page is a work in progress.
 
-<!-- TODO(@divy-work): Add playground to docs -->
+:::
+
+[More info](https://github.com/nestdotland/api)
