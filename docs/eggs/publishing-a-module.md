@@ -52,7 +52,7 @@ Additional options:
 You just need to import the `publish` function from the latest version of eggs.
 
 ```ts
-import { publish } from "https://x.nest.land/eggs@0.3.1/src/commands/publish.ts";
+import { publish } from "https://x.nest.land/eggs@0.3.8/src/commands/publish.ts";
 
 const config = {
   description: "Your brief module description",
@@ -86,7 +86,7 @@ jobs:
       - uses: denolib/setup-deno@master
         with:
           deno-version: 1.4.6
-      - run: deno install -Af --unstable https://x.nest.land/eggs@0.3.1/eggs.ts
+      - run: deno install -Af --unstable https://x.nest.land/eggs@0.3.8/eggs.ts
       - run: |
           export PATH="/home/runner/.deno/bin:$PATH"
           eggs link ${{ secrets.NESTAPIKEY }}
