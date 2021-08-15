@@ -82,15 +82,19 @@ jobs:
   publish-egg:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: denolib/setup-deno@master
+      - name: Setup Actions
+        uses: actions/checkout@v2
+
+      - name: Setup Deno
+        uses: maximousblk/setup-deno@v1
         with:
-          deno-version: 1.4.6
-      - run: deno install -Af --unstable https://x.nest.land/eggs@0.3.8/eggs.ts
-      - run: |
-          export PATH="/home/runner/.deno/bin:$PATH"
+           deno-version: 1.13
+          
+      - name: Release
+        run: |
+          deno install -Af --unstable https://x.nest.land/eggs@0.3.8/eggs.ts
           eggs link ${{ secrets.NESTAPIKEY }}
-          eggs publish
+          eggs publish --yes --no-check --version $(git describe --tags $(git rev-list --tags --max-count=1))
 ```
 
 To see how to use this, visit our [eggs-ci repository](https://github.com/nestdotland/eggs-ci).
