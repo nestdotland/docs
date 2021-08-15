@@ -80,15 +80,15 @@ on:
 
 jobs:
   publish-egg:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
       - name: Setup Actions
         uses: actions/checkout@v2
 
       - name: Setup Deno
-        uses: denolib/setup-deno@v2
+        uses: maximousblk/setup-deno@v1
         with:
-           deno-version: v1.5.x
+           deno-version: 1.13
           
       - name: Release
         run: |
