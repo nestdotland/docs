@@ -6,8 +6,8 @@ You can publish your module through our CLI or programmatically, in a typescript
 
 To configure your module when publishing, you can use:
 
-- an egg.json or egg.yaml file;
-- an eggignore file;
+- an `egg.json` or `egg.yaml` file
+- a `.eggignore` file
 - the [options](#options) of the publish command.
 
 If there is a conflict between a field in your config, the options of the publish command will take precedence, then the eggignore file and finally the eggs config file.
@@ -15,18 +15,22 @@ If there is a conflict between a field in your config, the options of the publis
 There are a number of required fields that must appear somewhere in your configuration:
 
 - `name`;
-- `version` and/or `bump`;
+- `version` and/or `bump`
 - `files` and/or `ignore`
 
 To publish a module, just navigate to the root of your module (where your egg file is located) and use the following command:
 
-```shell script
+```sh
 eggs publish
 ```
 
-**Boom!** After this, you'll be returned a link to your module on our [Gallery](https://nest.land/gallery). You should also update your `README.md` with this url so that other users can find your module on [Nest.land](https://nest.land)!
+After this, you'll be returned a link to your module on the [Module Gallery](https://nest.land/gallery). You should also update your `README.md` with this url so that other users can find your module on Nest!
 
-> Note: Use the same command to publish a new version to an existing module!
+:::tip
+
+Use the same command to publish a new version to an existing module!
+
+:::
 
 ### Options
 
@@ -52,15 +56,15 @@ Additional options:
 You just need to import the `publish` function from the latest version of eggs.
 
 ```ts
-import { publish } from "https://x.nest.land/eggs@0.3.8/src/commands/publish.ts";
+import { publish } from 'https://x.nest.land/eggs@0.3.8/src/commands/publish.ts';
 
 const config = {
-  description: "Your brief module description",
-  version: "0.0.1",
+  description: 'Your brief module description',
+  version: '0.0.1',
   /* ... */
 };
 
-publish(config, "my-module");
+publish(config, 'my-module');
 ```
 
 This functions identically to the CLI, and features such as logging are still available.
@@ -69,28 +73,28 @@ This avoids the need to install eggs. Moreover, every contributor to the project
 
 ## Automatic publishing
 
-Thanks to [@divy-work](https://github.com/divy-work), you can now set up a GitHub Actions workflow for automatically publishing your modules!
+You can set up a GitHub Actions workflow for automatically publishing your modules!
 
 ```yml
-name: Publish Egg
+name: Publish
 
 on:
-  release:
-    types: [published]
+  create:
+    ref_type: 'tag'
 
 jobs:
-  publish-egg:
+  publish:
     runs-on: ubuntu-latest
     steps:
-      - name: Setup Actions
+      - name: Setup repo
         uses: actions/checkout@v2
 
       - name: Setup Deno
         uses: maximousblk/setup-deno@v1
         with:
-           deno-version: 1.13
-          
-      - name: Release
+          deno-version: 1.13
+
+      - name: Publish
         run: |
           deno install -Af --unstable https://x.nest.land/eggs@0.3.8/eggs.ts
           eggs link ${{ secrets.NESTAPIKEY }}
@@ -101,32 +105,24 @@ To see how to use this, visit our [eggs-ci repository](https://github.com/nestdo
 
 ## Badge
 
-In addition, you'll have the option of adding our official badge to your project docs, courtesy of [@maximousblk](https://github.com/maximousblk). This is the best way you can support our platform and help us grow. We'd really appreciate seeing it on your project!
+You can add our badge to your project docs. This is a great way to support our platform and help us grow. We'd really appreciate seeing it on your project!
 
-**Round Edition**
-
-![nest badge rounded](https://nest.land/badge.svg)
+![round](https://nest.land/badge.svg)
 
 ```
-[![nest badge](https://nest.land/badge.svg)](https://nest.land/package/your-module)
+[![nest.land](https://nest.land/badge.svg)](https://nest.land/package/<your-module-name>)
 ```
 
-<hr />
-
-**Block Edition**
-
-![nest badge sharp](https://nest.land/badge-block.svg)
+![for-the-badge](https://nest.land/badge-block.svg)
 
 ```
-[![nest badge](https://nest.land/badge-block.svg)](https://nest.land/package/your-module)
+[![nest.land](https://nest.land/badge-block.svg)](https://nest.land/package/<your-module-name>)
 ```
 
-<hr />
+or if you want to support us even _louder_, you can use the large badge:
 
-or if you want to support us _louder_, you can use the large badge:
-
-![nest badge large](https://nest.land/badge-large.svg)
+![large](https://nest.land/badge-large.svg)
 
 ```
-[![nest badge](https://nest.land/badge-large.svg)](https://nest.land/package/your-package)
+[![nest.land](https://nest.land/badge-large.svg)](https://nest.land/package/<your-module-name>)
 ```

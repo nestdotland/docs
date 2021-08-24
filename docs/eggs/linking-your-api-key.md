@@ -12,6 +12,8 @@ eggs link <your key>
 
 This will save your API key on your local machine. Now you will be able to publish modules to the blockchain without logging in ever again.
 
-> Do **not** share your API key with anyone.
->
-> If you want others to be able to publish a new version of your module, don't worry. We're working on a better solution!
+:::danger
+
+Keep your API key safe and **DO NOT** share it with anyone. You cannot create a new key once you loose the old one.
+
+:::

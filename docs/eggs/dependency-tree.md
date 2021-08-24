@@ -18,12 +18,16 @@ eggs info
 
 ## Options
 
-### --full
+### `--full`
 
 It is possible to view the entire tree with the `--full` option. This will replace the `...` with the relevant imports.
 
-> Warning, this is not recommended on large trees.
+:::caution
 
-### --raw
+This is not recommended on large trees.
+
+:::
+
+### `--raw`
 
 If you want to display URLs without beautification, this option will simply display the base URLs.

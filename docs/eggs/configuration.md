@@ -42,11 +42,15 @@ Here is a template egg configuration file with all available fields:
 }
 ```
 
-> Note: with a JSON file, you can validate your config by adding the following field:
->
-> ```json
-> "$schema": "https://x.nest.land/eggs@0.3.8/src/schema.json",
-> ```
+:::note
+
+With a JSON file, you can validate your config by adding the following field:
+
+```json
+"$schema": "https://x.nest.land/eggs@0.3.8/src/schema.json",
+```
+
+:::
 
 **YAML**:
 
@@ -73,54 +77,87 @@ check: false
 
 ### Field information
 
-- name:
-  - The name of your module.
-- entry:
-  - The "index file" of your project. This is what users will see when they try to import your module from our registry!
-  - Defaults to `./mod.ts`
-- description:
-  - A description of your module that will appear on the gallery.
-- homepage:
-  - A link to your homepage. (Note: Usually a repository.)
-  - Defaults to `null`.
-- unstable:
-  - Is this version unstable?
-  - Default value is determined by [Semantic Versioning](https://semver.org/) rules.
-- unlisted:
-  - Should people be able to find this module/version on the gallery? If `true`, module is hidden.
-  - Defaults to `false`.
-- version:
-  - Your module version.
-  - Version must follow [Semantic Versioning 2.0.0](https://semver.org/).
-- releaseType:
-  - Increment the version by the release type.
-    - patch - Bump the version up to the next patch version.
-    - minor - Bump the version up to the next minor version.
-    - major - Bump the version up to the next major version.
-    - pre - Increment the prerelease version.
-    - prepatch - Bump the version up to the next patch version and down to a prerelease.
-    - preminor - Bump the version up to the next minor version and down to a prerelease.
-    - premajor - Bump the version up to the next major version and down to a prerelease.
-    - prerelease - Increment the prerelease version or increment the patch version from a non-prerelease version.
-- files: - All the files that should be uploaded to nest.land. Supports file globbing. - Will throw an error if some files are not found.
-  > Do not use `./**/*` for the `files` field! This has been known to cause errors in the publishing process.
-- ignore:
-  - All the files that should be ignored when uploading to nest.land. Supports file globbing.
-  - For more details, please refer to [#eggignore](#eggignore).
-- checkFormat:
-  - Automatically format your code before publishing to the blockchain.
-  - Accepts a boolean or a string (user defined command).
-  - Executes `deno fmt --check` if `true`.
-- checkTest:
-  - Run tests to ensure module is not broken.
-  - Accepts a boolean or a string (user defined command).
-  - Executes `deno test -A --unstable` if `true`.
-- checkInstallation:
-  - Simulates a dummy installation and check for missing files in the dependency tree.
-  - Defaults to `false`.
-- check:
-  - Performs all checks.
-  - Defaults to `true`.
+#### `name`
+
+- The name of your module.
+
+#### `entry`
+
+- The "index file" of your project. This is what users will see when they try to import your module from our registry!
+- Defaults to `./mod.ts`
+
+#### `description`
+
+- A description of your module that will appear on the gallery.
+
+#### `homepage`
+
+- A link to your homepage. (Note: Usually a repository.)
+- Defaults to `null`.
+
+#### `unstable`
+
+- Is this version unstable?
+- Default value is determined by [Semantic Versioning](https://semver.org/) rules.
+
+#### `unlisted`
+
+- Should people be able to find this module/version on the gallery? If `true`, module is hidden.
+- Defaults to `false`.
+
+#### `version`
+
+- Your module version.
+- Version must follow [Semantic Versioning 2.0.0](https://semver.org/).
+
+#### `releaseType`
+
+- Increment the version by the release type.
+  - `patch` - Bump the version up to the next patch version.
+  - `minor` - Bump the version up to the next minor version.
+  - `major` - Bump the version up to the next major version.
+  - `pre` - Increment the prerelease version.
+  - `prepatch` - Bump the version up to the next patch version and down to a prerelease.
+  - `preminor` - Bump the version up to the next minor version and down to a prerelease.
+  - `premajor` - Bump the version up to the next major version and down to a prerelease.
+  - `prerelease` - Increment the prerelease version or increment the patch version from a non-prerelease version.
+
+#### `files`
+
+- All the files that should be uploaded to nest.land. Supports file globbing. - Will throw an error if some files are not found.
+
+:::caution
+
+Do not use `./**/*` for the `files` field! This will include all the files in your `.git` directory and possibly any secret files like `.env`. You can't delete the version or module once it is published.
+
+:::
+
+#### `ignore`
+
+- All the files that should be ignored when uploading to nest.land. Supports file globbing.
+- For more details, please refer to [#eggignore](#eggignore).
+
+#### `checkFormat`
+
+- Automatically format your code before publishing to the blockchain.
+- Accepts a boolean or a string (user defined command).
+- Executes `deno fmt --check` if `true`.
+
+#### `checkTest`
+
+- Run tests to ensure module is not broken.
+- Accepts a boolean or a string (user defined command).
+- Executes `deno test -A --unstable` if `true`.
+
+#### `checkInstallation`
+
+- Simulates a dummy installation and check for missing files in the dependency tree.
+- Defaults to `false`.
+
+#### `check`
+
+- Performs all checks.
+- Defaults to `true`.
 
 ## .eggignore
 
@@ -152,12 +189,16 @@ eggs-debug.log
 You can import other files with the `extends` keyword. The extended file must follow the same syntax.
 For instance, to avoid duplicating the content of your `.gitignore` file, just add:
 
-```diff
-+ extends .gitignore
+```gitignore {1}
+extends .gitignore
 .idea/**
 .vscode/**
 benchmarks/**
 eggs-debug.log
 ```
 
-> Note: when extending the `.gitignore` file, `.git*/**` is automatically added to the list of ignored file.
+:::note
+
+Note: when extending the `.gitignore` file, `.git*/**` is automatically added to the list of ignored file.
+
+:::

@@ -2,10 +2,10 @@
 title: Installation
 ---
 
-To publish your first module to nest.land, you will need our CLI, **eggs**. You can install it using this command:
+To publish your first module to nest.land, you will need our CLI, `eggs`. You can install it using this command:
 
 ```shell script
-deno install -Afq --unstable https://x.nest.land/eggs@0.3.8/eggs.ts
+deno install -Af --unstable https://x.nest.land/eggs@0.3.8/eggs.ts
 ```
 
 Please make sure to use the `-A` flag to grant all permissions to eggs, so you can enjoy all features seamlessly.
@@ -13,44 +13,48 @@ Please make sure to use the `-A` flag to grant all permissions to eggs, so you c
 To ensure that you fully understand all the new features of the latest versions,
 make sure to read the [releases](https://github.com/nestdotland/eggs/releases) page!
 
-> Note: You need to upgrade to Deno v1.6.0 or newer in order to use our CLI.
+:::note
+
+Make sure you are using Deno `v1.12.0` or later.
+
+:::
 
 ## Permissions used
 
 Check out the tasks we use the required permissions for.
 
-**init**
+`eggs init`
 
-- `write` - write to the egg config file
-- `read` - read previous config
+- `--allow-write` - write to the egg config file
+- `--allow-read` - read previous config
 
-**install**
+`eggs install`
 
-- `write` - write to the `.eggs-global-modules.json` config file
-- `read` - read previous config
-- `net` - get latest module version
-- `run` - install module
-- `env` - get home dir
+- `--allow-write` - write to the `.eggs-global-modules.json` config file
+- `--allow-read` - read previous config
+- `--allow-net` - get latest module version
+- `--allow-run` - install module
+- `--allow-env` - get home dir
 
-**link**
+`eggs link`
 
-- `write` - write to the `.nest-api-key` config file
-- `env` - get home dir
+- `--allow-write` - write to the `.nest-api-key` config file
+- `--allow-env` - get home dir
 
-**publish**
+`publish`
 
-- `read` - read egg config file
-- `net` - fetch module data & publish module
+- `--allow-read` - read egg config file
+- `--allow-net` - fetch module data & publish module
 
-**update**
+`update`
 
-- `write` - write to the dependencies file
-- `read` - read dependencies file
-- `net` - get the latest module version
-- `env` - get global config file for executables
-- `run` - update executables
+- `--allow-write` - write to the dependencies file
+- `--allow-read` - read dependencies file
+- `--allow-net` - get the latest module version
+- `--allow-env` - get global config file for executables
+- `--allow-run` - update executables
 
-**upgrade**
+`upgrade`
 
-- `net` - get the latest eggs version
-- `run` - upgrade eggs
+- `--allow-net` - get the latest eggs version
+- `--allow-run` - upgrade eggs
