@@ -11,3 +11,9 @@ The Nest REST API is s work in progress. It is currently under heavy development
 :::
 
 [GitHub Repository](https://github.com/nestdotland/api)
+
+### Endpoint
+
+```
+api-dev.nest.land
+```
