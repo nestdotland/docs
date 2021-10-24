@@ -27,7 +27,7 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'GraphQL API',
+      label: 'REST API',
       items: ['api/README'],
     },
   ],
