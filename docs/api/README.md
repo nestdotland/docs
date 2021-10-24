@@ -1,6 +1,6 @@
 ---
 title: REST API
-sidebar_label: Introduction
+sidebar_label: Overview
 slug: /api
 ---
 
