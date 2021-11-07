@@ -56,7 +56,7 @@ Additional options:
 You just need to import the `publish` function from the latest version of eggs.
 
 ```ts
-import { publish } from 'https://x.nest.land/eggs@0.3.8/src/commands/publish.ts';
+import { publish } from 'https://x.nest.land/eggs@0.3.10/src/commands/publish.ts';
 
 const config = {
   description: 'Your brief module description',
@@ -96,7 +96,7 @@ jobs:
 
       - name: Publish
         run: |
-          deno install -Af --unstable https://x.nest.land/eggs@0.3.8/eggs.ts
+          deno install -Af --unstable https://x.nest.land/eggs@0.3.10/eggs.ts
           eggs link ${{ secrets.NESTAPIKEY }}
           eggs publish --yes --no-check --version $(git describe --tags $(git rev-list --tags --max-count=1))
 ```

@@ -5,7 +5,7 @@ title: Installation
 To publish your first module to nest.land, you will need our CLI, `eggs`. You can install it using this command:
 
 ```shell script
-deno install -Af --unstable https://x.nest.land/eggs@0.3.9/eggs.ts
+deno install -Af --unstable https://x.nest.land/eggs@0.3.10/eggs.ts
 ```
 
 Please make sure to use the `-A` flag to grant all permissions to eggs, so you can enjoy all features seamlessly.
