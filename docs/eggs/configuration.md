@@ -47,7 +47,7 @@ Here is a template egg configuration file with all available fields:
 With a JSON file, you can validate your config by adding the following field:
 
 ```json
-"$schema": "https://x.nest.land/eggs@0.3.8/src/schema.json",
+"$schema": "https://x.nest.land/eggs@0.3.10/src/schema.json",
 ```
 
 :::
