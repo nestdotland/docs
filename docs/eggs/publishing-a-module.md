@@ -37,7 +37,7 @@ Use the same command to publish a new version to an existing module!
 You can use several options as well, instead of stating these fields in your `egg` file:
 
 ```shell script
-eggs publish --bump minor
+eggs publish --release-type minor
 eggs publish --version 1.4.2
 eggs publish myModule --description "A deno module" --checkFormat
 ```
